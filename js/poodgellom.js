@@ -1,45 +1,11 @@
 
 
-var clickOnce = false;
-var timer = 0;
-
-//setInterval(function(){
-//    if(clickOnce == false){
-//    timer +=1
-//    if(timer >= 8){
-//        $('#main-menu').css('visibility','visible').hide().fadeIn("slow");
-//        clickOnce = true;
-//        }
-//    }
-//    
-//}, 1000);
-    
-
-//function navBarAppear(){
-//    
-//    
-//    $('body').click(function(){
-//        if(clickOnce == false){
-//        $('#main-menu').css('visibility','visible').hide().fadeIn("slow");
-//        clickOnce = true;
-//        }
-//    })
-//    
-//};
-////navBarAppear();
-//
-//if(window.innerWidth >= 500){
-//    navBarAppear();
-//} else {
-//    $('#main-menu').css('visibility','visible');
-//}
-
 
 
 function worm(){
     screenWidth = (window.innerWidth + 300) + "px";
     
-  $( "#worm" ).animate({ "left": '-=' + screenWidth + ''}, 90000 );
+  $( "#worm" ).animate({ "left": '-=' + screenWidth + ''}, 180000 );
     
    
  }

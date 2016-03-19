@@ -104,9 +104,11 @@ padding-bottom: 0%;
 
 
 
+/*
 #portal {
     background:  #006600;
 }
+*/
 
 @font-face{
     font-family: open;
@@ -127,7 +129,7 @@ footer {
     border:0;
    width: 100%;
     
-    background-color:  rgba(160,160,160,0.5);
+    background-color: transparent;
 /*    overflow-x:inherit;*/
 /*    display:none;*/
 }
@@ -154,15 +156,17 @@ footer>.row, footer>nav>.row{
     content:">";
     
 }
+/*
 #inspired-main-menu{
     margin:0;
     padding:0;
     min-height: 25px;
     height:6%;
     background:rgb(200,200,200) ;
-/*    background: rgba(80,80,80, 0.5);*/
+    background: rgba(80,80,80, 0.5);
     border-bottom: 1px solid transparent;
 }
+*/
 .navbar{
     margin:0;
     padding:0;
@@ -196,20 +200,26 @@ footer>.row, footer>nav>.row{
 #content-body{
     font-family: "Verdana";
     background-color: white;
+    padding: 5%;
     margin:4%;
+    border-radius: 10px;
 }
 #content-title{
-    
+    text-align: left;
+    color:white;
 }
 
 .page-header{
     margin-top: 0;
     padding-top: 10px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid white;
+    
 }
 
 #worm{
     position: relative;
-    left:80%;
+    left:50%;
     margin:0;
     padding:0;
 }
