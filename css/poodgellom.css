@@ -29,7 +29,7 @@ section{
 
 .fullPage{
     position: relative;
-    width: 100%;
+    width: 105%;
     height:100%;
     min-height: auto;
     -webkit-background-size: cover;
@@ -37,7 +37,7 @@ section{
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('/img/paper_back.jpg');
+    background-image: url('paperBack.jpg');
     text-align: center;
 
 }
@@ -220,7 +220,7 @@ footer>.row, footer>nav>.row{
 
 #worm{
     position: relative;
-    left:45%;
+    left:30%;
     margin:0;
     padding:0;
 }
@@ -228,6 +228,8 @@ footer>.row, footer>nav>.row{
     padding:0;
     margin:0;
 }
+
+/*----bubbles from http://www.css-jquery-design.com/2014/07/animated-bubbles-upwards-continuously-with-pure-css/*/
 
 @keyframes greenPulse {
   0% {box-shadow:0 0 30px #4bbec8}
@@ -293,8 +295,8 @@ div#beaker span.glow3 {
 }
 div#beaker span.bubble {
   background:#fff;
-  width:12vw;
-  height:12vw;
+  width:80px;
+  height:80px;
   position:absolute;
   display:block;
   left:40%;
@@ -311,8 +313,8 @@ div#beaker span.bubble {
 }
 div#beaker span.bubble2 {
   background:#fff;
-  width:13vw;
-  height:13vw;
+  width:80px;
+  height:80px;
   position:absolute;
   display:block;
   left:56%;
@@ -330,8 +332,8 @@ div#beaker span.bubble2 {
 
 div#beaker span.bubble3 {
   background:#fff;
-  width:13vw;
-  height:13vw;
+  width:80px;
+  height:80px;
   position:absolute;
   display:block;
   left:50%;
