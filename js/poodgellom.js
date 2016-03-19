@@ -5,7 +5,8 @@
 function worm(){
     screenWidth = (window.innerWidth + 300) + "px";
     
-  $( "#worm" ).animate({ "left": '-=' + screenWidth + ''}, 180000 );
+  $( "#worm" ).animate({ "left": '-=' + screenWidth + ''}, 100000 );
+     
     
    
  }
