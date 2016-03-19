@@ -1,0 +1,17 @@
+
+/*Global styling*/
+
+.hidden-section-heading, .skip-button {
+    position: absolute;
+    text-indent: -9000px;
+}
+
+a:focus {
+    outline: blue solid 2px;
+}
+    
+
+
+#poodgelomChroniclesHeroImage {
+    height: 50%;
+}

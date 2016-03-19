@@ -1,0 +1,387 @@
+
+
+/*Global styling*/
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.hidden-section-heading, .skip-button {
+    position: absolute;
+    text-indent: -9000px;
+}
+
+li:focus {
+    outline: blue solid 2px;
+}
+a:focus {
+    outline: blue solid 2px;
+}
+
+section{
+    background: #006600; 
+    overflow: hidden;
+    
+}
+
+.fullPage{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('/img/paper_back.jpg');
+    text-align: center;
+
+}
+.header-content{
+    background-color: rgba(0,102,0,0.1);
+    z-index:10;
+}
+
+.container-fluid>.row>#discover{
+    height:300px;
+    
+}
+#discover{
+    color:black;
+}
+
+.jumbotron{
+   
+border-top: 1px solid black;
+background: rgba(0,102,0,0.2);
+padding-bottom: 0%;
+
+    
+}
+
+.text-muted{
+    font-size: 0.8em;
+    margin-right: 2%;
+}
+
+
+.panel-default>.panel-heading{
+    text-align: center;
+    background-color: #006600; 
+    border
+}
+.panel-body{
+    font-family: Verdana;
+   
+}
+.panel{
+    margin:0.25%;
+    background-color:#E9F0DE;
+  
+}
+
+/*
+#worm{
+    z-index:300;
+    background: none;
+}
+*/
+
+
+/*specific stylings*/
+
+.gj{
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red,  #006600); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red,  #006600); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red,  #006600); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white,white,white,  #006600); /* Standard syntax */
+}
+
+
+
+
+#portal {
+    background:  #006600;
+}
+
+@font-face{
+    font-family: open;
+    src: url(OpenDyslexic-Regular.otf);
+}
+body{
+    font-family:open;
+   
+}
+
+
+
+
+footer {
+    position: absolute;
+    margin:0;
+    padding:0;
+    border:0;
+   width: 100%;
+    
+    background-color:  rgba(160,160,160,0.5);
+/*    overflow-x:inherit;*/
+/*    display:none;*/
+}
+
+footer>.row, footer>nav>.row{
+    font-size:0.8em;
+    font-family: Verdana;
+   
+    
+}
+
+
+.breadcrumb>li{
+    border: none;
+    font-size: 0.8em;
+    margin:0;
+    padding: 0;
+    
+}
+.breadcrumb{
+   margin-bottom: 0;
+}
+.breadcrumb>li+li:before{
+    content:">";
+    
+}
+#inspired-main-menu{
+    margin:0;
+    padding:0;
+    min-height: 25px;
+    height:6%;
+    background:rgb(200,200,200) ;
+/*    background: rgba(80,80,80, 0.5);*/
+    border-bottom: 1px solid transparent;
+}
+.navbar{
+    margin:0;
+    padding:0;
+    min-height: 25px;
+    height:6%;
+    background: rgba(80,80,80, 0.5);
+    border-bottom: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color:white;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #033BBD;
+}
+.navbar-nav{
+    margin-left:22%;
+}
+.navbar-toggle{
+    border:none;
+    color:white;
+    margin-top: -3px;
+}
+
+
+#shoppingButton{
+    font-size: 1em;
+    border:none;
+    background: none;
+}
+#content-body{
+    font-family: "Verdana";
+    background-color: white;
+    margin:4%;
+}
+#content-title{
+    
+}
+
+.page-header{
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+#worm{
+    position: relative;
+    left:80%;
+    margin:0;
+    padding:0;
+}
+#bottomInfo{
+    padding:0;
+    margin:0;
+}
+
+/*----Media Queries----*/
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    #discover{
+        font-size: 0.9em
+    }
+    #heroImage{
+        padding-top: 40%;
+    }
+    #main-image{
+        padding-top: 5%;
+    }
+    .jumbotron{
+        padding-bottom: 70%;
+    }
+    .nav{
+        font-size: 1em;
+    }
+    
+    .breadcrumb{
+        display: none;
+
+    }
+    #tag>h3{
+        font-size: 0.8em;
+    }
+    #tag{
+    padding-top: 4%;
+    text-align: center;
+    }
+    #worm{
+        height: 10%;
+        width:10%;
+    }
+    .emblem{
+        width: 13%;
+        height: 13%;
+        float: left; 
+    }
+ #inspired-main-menu{
+    margin:0;
+    padding:0;
+    width:105%;
+}
+#panelList{
+    width:105%;
+}
+ 
+    #main-navbar>ul>li{
+    background-color: rgba(200,202,200,0.97);   
+    border-bottom: 1px solid black;
+    margin-left: -75px;    
+   
+}
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+        background-color:transparent;
+    }
+   
+section{
+    background: #006600; 
+    overflow: hidden;
+    width:105%;
+}
+ 
+    
+   
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+      #discover {
+        font-size: 1.5em
+    }
+    #heroImage{
+        padding-top: 10%;
+    }
+    .jumbotron{
+        padding-bottom: 10%;
+        padding-left:0;
+    }
+    #tag{
+    padding-top: 5%;
+    text-align: center;
+    }
+     #worm{
+        height:12%;
+        width:12%;
+    }
+    .emblem{
+        width: 40%;
+        height: 40%;
+        float: left; 
+    }
+  
+    
+   
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+      #discover {
+        font-size: 2em
+    }
+    #heroImage{
+        padding-top: 8%;
+        width: 90%;
+        height: 90%;
+    }
+    #tag{
+    padding-top: 5%;
+    text-align: center;
+    }
+      #worm{
+        width: 4.5%;
+    height: 4.5%;
+    }
+    .emblem{
+        width: 50%;
+        height: 50%;
+        float: left; 
+    }
+    
+    
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+      #discover {
+        font-size: 2em
+    }
+    .container-fluid{
+    padding: 0%;
+    margin-left: 11%;
+    margin-right: 11%;
+    }
+    
+    #heroImage{
+        padding-top: 8%;
+        width: 80%;
+        height: 80%;
+      left: 100px;
+       
+    }
+    #tag{
+    padding-bottom: 1%;
+    text-align: center;
+    }
+    #corner-image{
+        margin:0.4%;
+    }
+    #tag{
+        padding-top: 5%;
+        text-align: center;
+    }
+     #worm{
+        width: 4.5%;
+        height: 4.5%;
+    }
+    .emblem{
+        width: 50%;
+        height: 50%;
+        float: left; 
+    }
+    .jumbotron{
+        padding-bottom:12%;
+    }
+    
+}
+
+
