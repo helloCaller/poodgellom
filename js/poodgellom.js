@@ -9,19 +9,34 @@ function worm(){
 
 worm();
 
+var navbar = {
+    menuOut: "false"
+}
 
-$(window).scroll(
-    {
-        previousTop: 0
-    }, 
-    function () {
-    var currentTop = $(window).scrollTop();
-    if (currentTop < this.previousTop) {
-        $(".custom-main-menu").show();
+$(".custom-main-menu").click(function(){
+    if(navbar.menuOut == "false"){
+        navbar.menuOut = "true";
     } else {
-        $(".custom-main-menu").hide();
+        navbar.menuOut = "false";
     }
-    this.previousTop = currentTop;
-})
+    console.log(navbar.menuOut);
+});
+
+
+    $(window).scroll(
+        {
+            previousTop: 0
+        }, 
+        function () {
+        var currentTop = $(window).scrollTop();
+        if (currentTop < this.previousTop) {
+            $(".custom-main-menu").show();
+        } else {
+            if(navbar.menuOut == "false"){
+            $(".custom-main-menu").hide();
+            }
+        }
+            this.previousTop = currentTop;
+        })
 
 
