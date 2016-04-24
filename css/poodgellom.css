@@ -45,7 +45,7 @@ section {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-repeat: no-repeat background-position: center;
-    background-image: url('/img/backgroundImage3.jpg');
+    background-image: url('/img/phoneback.jpg');
 }
 
 .header-content {
@@ -153,15 +153,9 @@ footer {
     content: ">";
 }
 
-#inspired-main-menu,
-#main-menu {
-    /*
-    margin:0;		
-     padding:0;		
-     min-height: 25px;		
-     height:6%;				
-*/
-/*    background: rgba(0, 42, 104, 0.7);*/
+
+.custom-main-menu {
+    background: rgba(0, 42, 104, 0.7);
 }
 
 .navbar {
@@ -178,10 +172,10 @@ footer {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #033BBD;
+    color: #6AF1F6;
 }
 
-#main-navbar {
+.custom-main-navbar {
     margin-left: 22%;
 }
 
@@ -520,6 +514,7 @@ div#beaker span.bubble4 {
     .nav {
         font-size: 1em;
     }
+    
     /*
     .navbar-nav {
         position:absolute;
@@ -547,7 +542,7 @@ div#beaker span.bubble4 {
         height: 13%;
         float: left;
     }
-    #inspired-main-menu, #main-menu {
+    .custom-main-menu {
         margin: 0;
         padding:0;
         width: 105%;
@@ -556,21 +551,40 @@ div#beaker span.bubble4 {
     #panelList {
         width: 105%;
     }
-    #main-navbar {
+        
+    
+    .custom-main-navbar {
         position: absolute;
-        margin-left: -55px;
         margin-top: 1px;
         width: 120%;
         border-top:none;
-        background: rgba(0, 42, 104, 0.7);
+        background-image: url("/img/menu_back.jpg");
+
     }
-    #main-navbar>ul>li,
-    #inspired-main-navbar>ul>li {
+    .custom-nav>li{
+        margin-left: -95px;
+        padding: 6%;
+    }
+    .custom-main-navbar>ul>li>a {
         text-align: center;
+        padding: 20px;
+        color: white;
     }
     .navbar-default .navbar-toggle:hover,
     .navbar-default .navbar-toggle:focus {
         background-color: transparent;
+    }
+    .navbar-fixed-top .navbar-collapse{
+        max-height: none;
+    }
+    .navbar-brand{
+        position:absolute;
+        width: 30%;
+        margin-top:-3.5%;
+        margin-bottom: 5%;
+        margin-left:10%;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 0.2em;
     }
     section {
         background: #006600;
@@ -598,6 +612,9 @@ div#beaker span.bubble4 {
         -o-background-size: 100% 100%;
         background-repeat: no-repeat background-position: center;
         background-image: url('/img/phoneback.jpg');
+    }
+    #content-body{
+        margin-top:14%;
     }
 }
 
