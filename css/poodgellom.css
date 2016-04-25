@@ -47,7 +47,7 @@ section {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-repeat: no-repeat background-position: center;
-    background-image: url('/img/phoneback.jpg');
+    background-image: url('../img/phoneback.jpg');
 }
 
 
@@ -443,42 +443,36 @@ div#beaker span.bubble4 {
         font-size: 1em;
     }
     
-    #tag>h3 {
-        font-size: 0.8em;
-    }
-    #tag {
-        padding-top: 4%;
-        text-align: center;
-    }
     #worm {
         height: 10%;
         width: 10%;
-    }
-    .emblem {
-        width: 13%;
-        height: 13%;
-        float: left;
     }
     
 /*    ---------NAV-------*/
     .custom-main-menu {
         margin: 0;
-        padding:0;
+        padding:9%;
         width: 105%;
         background: rgba(0, 42, 104, 0.7);
+        border-bottom: 1px solid white;
     }
-        
+      
     
     .custom-main-navbar {
         position: absolute;
-        margin-top: 1px;
-        width: 120%;
+        left:0;
+        padding:-18%;
+        width:100%;
         border-top:none;
-        background-image: url("/img/menu_back.jpg");
+          background: url("../img/menu_back.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
     }
     .custom-nav>li{
-        margin-left: -95px;
+        margin-left: 10%;
         padding: 6%;
     }
     .custom-main-navbar>ul>li>a {
@@ -493,14 +487,18 @@ div#beaker span.bubble4 {
     .navbar-fixed-top .navbar-collapse{
         max-height: none;
     }
-    .navbar-brand{
-        position:absolute;
-        width: 30%;
-        margin-top:-3.5%;
-        margin-bottom: 5%;
-        margin-left:10%;
+    #imageNav{
+        position:relative;
+        width: 25%; 
         background-color: rgba(255,255,255,0.2);
         border-radius: 0.2em;
+        z-index: 10000;
+    }
+    .navbar-toggle{
+        margin-top: -7%;
+    }
+    .custom-nav{
+        width:100%;
     }
     
 /*    -------CONTENT------*/
@@ -575,7 +573,7 @@ footer {
         background-size: 100% 100%;
         -o-background-size: 100% 100%;
         background-repeat: no-repeat background-position: center;
-        background-image: url('/img/phoneback.jpg');
+        background-image: url('../img/phoneback.jpg');
     }
     
 }
@@ -617,7 +615,7 @@ footer {
     .custom-nav {
     margin-left: 15%;
 }
-    .navbar-brand{
+    #imageNav{
         position:absolute;
         width: 12%;
         height: 120%;
@@ -701,7 +699,7 @@ footer {
         background-size: 100% 100%;
         -o-background-size: 100% 100%;
         background-repeat: no-repeat background-position: center;
-        background-image: url('/img/phoneback.jpg');
+        background-image: url('../img/phoneback.jpg');
     }
 }
 
@@ -735,7 +733,7 @@ footer {
     .custom-nav {
     margin-left: 35%;
 }
-    .navbar-brand{
+    #imageNav{
         position:absolute;
         width: 9%;
         height: 135%;
@@ -817,7 +815,7 @@ footer {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-repeat: no-repeat background-position: center;
-    background-image: url('/img/phoneback.jpg');
+    background-image: url('../img/phoneback.jpg');
 }
 }
 
@@ -872,10 +870,10 @@ footer {
     .custom-nav {
     margin-left: 35%;
 }
-    .navbar-brand{
+    #imageNav{
         position:absolute;
         width: 9%;
-        height: 135%;
+/*        height: 135%;*/
         margin-top:-1%;
         margin-bottom: 4%;
         padding-bottom: 2%;
@@ -907,7 +905,7 @@ footer {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-repeat: no-repeat background-position: center;
-    background-image: url('/img/phoneback.jpg');
+    background-image: url('../img/phoneback.jpg');
 }
     
 /*    -------FOOTER------*/
