@@ -11,15 +11,27 @@ worm();
 
 var navbar = {
     menuOut: "false",
+    image:document.getElementById("imageNav"),
+    
 }
+
+var currentImageWidth = navbar.image.clientWidth;
 $(".navbar-toggle").click(function(){
+     
     if(navbar.menuOut == "false"){
         navbar.menuOut = "true";
+        $(".wrapper").css("position", "fixed");
+        $(".wrapper").css("overflow", "hidden");
+        
+        
     } else {
         navbar.menuOut = "false";
+        $(".wrapper").css("position", "absolute");
+        $(".wrapper").css("overflow", "auto");
+        
     }
-    console.log(navbar.menuOut);
 });
+    
 
 $(window).scroll(
         {
@@ -29,6 +41,7 @@ $(window).scroll(
         var currentTop = $(window).scrollTop();
         if (currentTop < this.previousTop) {
             $(".custom-main-menu").show();
+ 
         } else if(navbar.menuOut == "false" && currentTop >=20){
             $(".custom-main-menu").hide();
             }
