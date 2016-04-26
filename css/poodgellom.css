@@ -430,30 +430,33 @@ div#beaker span.bubble4 {
 /* Extra small devices (phones, up to 480px) */
 
 @media screen and (max-width: 767px) {
-    #discover {
+#discover {
         font-size: 0.9em
     }
-    #heroImage {
+    
+#heroImage {
         padding-top: 40%;
     }
-    #main-image {
+    
+#main-image {
         padding-top: 5%;
-      
-    }
-    .jumbotron {
-        padding-bottom: 70%;
-    }
-    .nav {
-        font-size: 1em;
+      }
+    
+.jumbotron {
+    padding-bottom: 70%;
     }
     
-    #worm {
+.nav {
+    font-size: 1em;
+    }
+    
+#worm {
         height: 10%;
         width: 10%;
     }
     
 /*    ---------NAV-------*/
-    .custom-main-menu {
+.custom-main-menu {
         margin: 0;
         padding:9%;
         width: 105%;
@@ -462,7 +465,7 @@ div#beaker span.bubble4 {
     }
       
     
-    .custom-main-navbar {
+.custom-main-navbar {
         position: absolute;
         left:0;
         margin-top: 3%;
@@ -479,108 +482,112 @@ div#beaker span.bubble4 {
 */
 
     }
-    .custom-nav>li{
-        margin-left: 10%;
-        padding: 2%;
+    
+.custom-nav>li{
+        font-size: 1.5em;
+        margin-left: 3%;
     }
-    .custom-main-navbar>ul>li>a {
+    
+.custom-main-navbar>ul>li>a {
         text-align: center;
-        padding: 20px;
+        padding: 6.3%;
         color: white;
     }
-    .navbar-default .navbar-toggle:hover,
-    .navbar-default .navbar-toggle:focus {
+    
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
         background-color: transparent;
     }
-    .navbar-fixed-top .navbar-collapse{
+    
+.navbar-fixed-top .navbar-collapse{
         max-height: none;
     }
-    #brand{
+    
+#brand{
         position:absolute;
         top:0;
         left:0;
     }
-    #imageNav{
+    
+#imageNav{
         position:relative;
+        left: -4%;
         width: 30%;
-        top:-65%;
+        top:-20%;
         background-color: rgba(255,255,255,0.2);
         border-radius: 0.2em;
         z-index: 10000;
     }
-    .navbar-toggle{
+    
+.navbar-toggle{
         margin-top: -7%;
         margin-left: -10%;
     }
-    .custom-nav{
+    
+.custom-nav{
         width:100%;
     }
     
 /*    -------CONTENT------*/
-    #content-body {
-    background-color: white;
-    padding: 5%;
-    margin: 4%;
-    margin-top:20%;
-    border-radius: 10px;
-}
-    
-    section {
-        background: #006600;
-        overflow: hidden;
-        width: 105%;
+#content-body {
+        background-color: white;
+        padding: 5%;
+        margin: 4%;
+        margin-top:20%;
+        border-radius: 10px;
     }
-    .text-muted {
+    
+.text-muted {
         font-size: 0.4em;
     }
     
     
     
 /*    -------------footer-------*/
-    .contactFooter>.panel-default {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    font-family: Verdana;
-    font-size: 0.8em;
-}
+.contactFooter>.panel-default {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        font-family: Verdana;
+        font-size: 0.8em;
+    }
 
 .contactFooter>.panel-default>.panel-heading {
-    text-align: center;
-    font-size: 0.9em;
-    border: none;
-    background: transparent;
-    padding-bottom: 0;
-}
+        text-align: center;
+        font-size: 0.9em;
+        border: none;
+        background: transparent;
+        padding-bottom: 0;
+    }
 
 .contactFooter>.panel-default>.panel-body>ul>li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.7em;
-}
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+    }
 
 .contactFooter>.panel-default>.panel-body>ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-    hr{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+hr{
         padding:0;
         margin:0;
     }
 
 
 footer {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    background-color: transparent;
-}
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        background-color: transparent;
+    }
 
-    .fullPage {
+.fullPage {
         position: relative;
         width: 100%;
         height: 100%;
@@ -599,40 +606,35 @@ footer {
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #discover {
+#discover {
         font-size: 1.5em
     }
-    #heroImage {
+#heroImage {
         padding-top: 10%;
     }
-    .jumbotron {
+.jumbotron {
         padding-bottom: 10%;
         padding-left: 0;
     }
-    #tag {
+#tag {
         padding-top: 5%;
         text-align: center;
     }
-    #worm {
+#worm {
         height: 12%;
         width: 12%;
     }
-    .emblem {
-        width: 40%;
-        height: 40%;
-        float: left;
-    }
-    .customPanelBody {
+.customPanelBody {
         font-size: 0.8em;
     }
-    .customPanelHead {
+.customPanelHead {
         font-size: 5em;
     }
     /*    ---------NAV-------*/
-    .custom-nav {
-    margin-left: 15%;
-}
-    #imageNav{
+.custom-nav {
+        margin-left: 15%;
+    }
+#imageNav{
         position:absolute;
         width: 12%;
         height: 120%;
@@ -645,68 +647,62 @@ footer {
     }
     
 /*    -------CONTENT------*/
-    #content-body {
-    background-color: white;
-    padding: 5%;
-    margin: 4%;
-    margin-top:14%;
-    border-radius: 10px;
-}
-    
-    section {
-        background: #006600;
-        overflow: hidden;
-        width: 105%;
+#content-body {
+        background-color: white;
+        padding: 5%;
+        margin: 4%;
+        margin-top:14%;
+        border-radius: 10px;
     }
-    .text-muted {
+.text-muted {
         font-size: 0.4em;
     }
     
 /*    -------------footer-------*/
-    .contactFooter>.panel-default {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    font-family: Verdana;
-    font-size: 0.8em;
-}
+.contactFooter>.panel-default {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        font-family: Verdana;
+        font-size: 0.8em;
+    }
 
 .contactFooter>.panel-default>.panel-heading {
-    text-align: center;
-    font-size: 0.9em;
-    border: none;
-    background: transparent;
-    padding-bottom: 0;
-}
+        text-align: center;
+        font-size: 0.9em;
+        border: none;
+        background: transparent;
+        padding-bottom: 0;
+    }
 
 .contactFooter>.panel-default>.panel-body>ul>li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 0.7em;
-}
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 0.7em;
+    }
 
 .contactFooter>.panel-default>.panel-body>ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-    hr{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+hr{
         padding:0;
         margin:0;
     }
 
 
 footer {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    background-color: transparent;
-}
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        background-color: transparent;
+    }
 
-    .fullPage {
+.fullPage {
         position: relative;
         width: 100%;
         height: 100%;
@@ -724,140 +720,135 @@ footer {
 /* tablets/desktops and up ----------- */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    #discover {
+#discover {
         font-size: 2em
     }
-    #heroImage {
+#heroImage {
         padding-top: 8%;
         width: 90%;
         height: 90%;
     }
-    #tag {
+#tag {
         padding-top: 5%;
         text-align: center;
     }
-    #worm {
+#worm {
         width: 4.5%;
         height: 4.5%;
     }
-    .emblem {
-        width: 50%;
-        height: 50%;
-        float: left;
-    }
    
     /*    -----nav------*/
-    .custom-nav {
-    margin-left: 35%;
-}
-    #imageNav{
+.custom-nav {
         position:absolute;
-        width: 9%;
-        height: 135%;
+        margin-left: 19%;
+}
+#imageNav{
+        position:absolute;
+        width: 15%;
         margin-top:-1%;
         margin-bottom: 4%;
-        padding-bottom: 2%;
-        background-color: rgba(255,255,255,0.4);
+        background-color: rgba(250,250,250,0.9);
         border-radius: 0.2em;
+        box-shadow: 1px 2px 1px grey;
         
     }
     
 
    /*    -------CONTENT-------*/
-    #content-body {
-    background-color: white;
-    padding: 2%;
-    margin: 4%;
-    padding-top: 1%;
-    border-radius: 10px;
+#content-body {
+        background-color: white;
+        padding: 2%;
+        margin: 4%;
+        padding-top: 1%;
+        border-radius: 10px;
 }
-    #inspired-text{
+#inspired-text{
         margin: 5%;
     }
     /*    -------FOOTER------*/
     
 .contactFooter>.panel-default {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    font-family: Verdana;
-    font-size: 0.8em;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        font-family: Verdana;
+        font-size: 0.8em;
     
 }
 
 .contactFooter>.panel-default>.panel-heading {
-    text-align: center;
-    font-size: 1.2em;
-    border: none;
-    background: transparent;
-    padding: 0;
+        text-align: center;
+        font-size: 1.2em;
+        border: none;
+        background: transparent;
+        padding: 0;
 }
 
 .contactFooter>.panel-default>.panel-body>ul>li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
 }
 
 .contactFooter>.panel-default>.panel-body>ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+        margin: 0;
+        padding: 0;
+        text-align: center;
 }
 
-    hr{
+hr{
         padding:0;
         margin:0;
     }
 
 footer {
-    position: absolute;
-    bottom:-160px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.5);
-   
+        position: absolute;
+        bottom:-160px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.5);
+
 }
     
     
-    .fullPage {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-repeat: no-repeat background-position: center;
-    background-image: url('../img/phoneback.jpg');
-}
+.fullPage {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-repeat: no-repeat background-position: center;
+        background-image: url('../img/phoneback.jpg');
+    }
 }
 
 
 /* large desktops and up ----------- */
 
 @media screen and (min-width: 1200px) {
-    #discover {
+#discover {
         font-size: 2em
     }
-    .container-fluid {
+.container-fluid {
         padding: 0%;
         margin-left: 11%;
         margin-right: 11%;
     }
-    .container-fluid>.navbar-collapse {
+.container-fluid>.navbar-collapse {
         margin-left: -15.5%;
     }
-    #heroImage {
+#heroImage {
         padding-top: 8%;
         width: 80%;
         height: 80%;
         left: 100px;
     }
-    #tag {
+#tag {
         padding-bottom: 1%;
         text-align: center;
     }
@@ -866,94 +857,97 @@ footer {
         margin:0.4%;
     }
 */
-    #tag {
+#tag {
         padding-top: 5%;
         text-align: center;
     }
-    #worm {
+#worm {
         width: 4.5%;
         height: 4.5%;
     }
-    .emblem {
+.emblem {
         width: 50%;
         height: 50%;
         float: left;
     }
-    .jumbotron {
+.jumbotron {
+        margin: 0;
         padding-bottom: 12%;
     }
     
 /*    -----nav------*/
-    .custom-nav {
-    position:absolute;
-    margin-left: 32%;
+.custom-nav {
+        position:absolute;
+        margin-left: 30%;
 }
-}
-    #imageNav{
+
+#imageNav{
         position:inline;
-        width: 6%;
-        margin-left: -10%;
+        width: 15%;
+        margin-left: -12%;
         margin-top:-1%;
-        background-color: rgba(255,255,255,0.4);
+        background-color: rgba(250,250,250,0.9);
         border-radius: 0.2em;
-        
+        box-shadow: 1px 2px 1px grey;
     }
     
 /*    -------CONTENT-------*/
     #content-body {
-    background-color: white;
-    padding: 2%;
-    margin: 4%;
-    padding-top: 1%;
-    border-radius: 10px;
+        
+        background-color: white;
+        padding: 2%;
+        margin: 4%;
+        padding-top: 1%;
+        border-radius: 10px;
 }
     #inspired-text{
         margin: 5%;
-    }
+}
     
     
     .fullPage {
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-repeat: no-repeat background-position: center;
-    background-image: url('../img/phoneback.jpg');
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        background-repeat: no-repeat background-position: center;
+        background-image: url('../img/phoneback.jpg');
 }
+   
     
 /*    -------FOOTER------*/
     
-.contactFooter>.panel-default {
-    border: none;
-    background: transparent;
-    box-shadow: none;
-    font-family: Verdana;
-    font-size: 0.8em;
+    .contactFooter>.panel-default {
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        font-family: Verdana;
+        font-size: 0.8em;
     
 }
 
-.contactFooter>.panel-default>.panel-heading {
-    text-align: center;
-    font-size: 1.2em;
-    border: none;
-    background: transparent;
-    padding: 0;
+    .contactFooter>.panel-default>.panel-heading {
+        text-align: center;
+        font-size: 1.2em;
+        border: none;
+        background: transparent;
+        padding: 0;
 }
 
-.contactFooter>.panel-default>.panel-body>ul>li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    .contactFooter>.panel-default>.panel-body>ul>li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
 }
 
-.contactFooter>.panel-default>.panel-body>ul {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    .contactFooter>.panel-default>.panel-body>ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
 }
 
     hr{
@@ -961,14 +955,15 @@ footer {
         margin:0;
     }
 
-footer {
-    position: absolute;
-    bottom:-142px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.5);
-   
+    footer {
+        position: absolute;
+        bottom:-142px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.5);
+
 }
+    
 }
