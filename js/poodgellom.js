@@ -3,11 +3,25 @@
 
 
 function worm(){
-    screenWidth = (window.innerWidth + 300) + "px";
-    $( "#worm" ).animate({ "left": '-=' + screenWidth + ''}, 100000 );
+   
+    var endPoint= window.innerWidth/2 + "px";
+    screenWidth = (window.innerWidth + 50) + "px";
+    $( "#worm" ).animate(
+        { "left": '-=' + endPoint + ''
+            },
+        {
+        duration: 100000,
+        step:function(){
+                var wormPosition = $("#worm").position().left
+                    if(wormPosition <= -50){
+                        $("#worm").stop();
+                        $("#worm").remove();
+                    }
+                }
+        });    
 }
-worm();
 
+worm();
 
 var navbar = {
     menuOut: "false",
