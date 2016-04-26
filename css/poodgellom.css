@@ -40,23 +40,6 @@ section {
     z-index: 100;
 }
 
-.fullPage {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-repeat: no-repeat background-position: center;
-    background-image: url('../img/phoneback.jpg');
-}
-
-
-.container-fluid>.row>#discover {
-    height: 300px;
-}
 
 #discover {
     color: white;
@@ -64,8 +47,8 @@ section {
 
 .jumbotron {
     border-top: 1px solid black;
-    background: rgba(0, 102, 0, 0.2);
-    padding-bottom: 0%;
+    background: transparent;
+    
 }
 
 .text-muted {
@@ -342,8 +325,8 @@ div#beaker span.glow4 {
 
 div#beaker span.bubble {
     background: #fff;
-    width: 85px;
-    height: 85px;
+    width: 6em;
+    height: 6em;
     position: absolute;
     display: block;
     left: 25%;
@@ -361,8 +344,8 @@ div#beaker span.bubble {
 
 div#beaker span.bubble2 {
     background: #fff;
-    width: 70px;
-    height: 70px;
+    width: 5em;
+    height: 5em;
     position: absolute;
     display: block;
     left: 50%;
@@ -380,8 +363,8 @@ div#beaker span.bubble2 {
 
 div#beaker span.bubble3 {
     background: #fff;
-    width: 50px;
-    height: 50px;
+    width: 3.5em;
+    height: 3.5em;
     position: absolute;
     display: block;
     left: 70%;
@@ -399,8 +382,8 @@ div#beaker span.bubble3 {
 
 div#beaker span.bubble4 {
     background: #fff;
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
     position: absolute;
     display: block;
     left: 45%;
@@ -487,22 +470,22 @@ div#beaker span.bubble4 {
         color: white;
     }
     
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+    .navbar-default .navbar-toggle:hover,
+    .navbar-default .navbar-toggle:focus {
         background-color: transparent;
     }
     
-.navbar-fixed-top .navbar-collapse{
+    .navbar-fixed-top .navbar-collapse{
         max-height: none;
     }
     
-#brand{
+    #brand{
         position:absolute;
         top:0;
         left:0;
     }
     
-#imageNav{
+    #imageNav{
         position:relative;
         left: -4%;
         width: 30%;
@@ -512,17 +495,17 @@ div#beaker span.bubble4 {
         z-index: 10000;
     }
     
-.navbar-toggle{
+    .navbar-toggle{
         margin-top: -7%;
         margin-left: -10%;
     }
     
-.custom-nav{
+    .custom-nav{
         width:100%;
     }
     
 /*    -------CONTENT------*/
-#content-body {
+    #content-body {
         background-color: white;
         padding: 5%;
         margin: 4%;
@@ -530,10 +513,9 @@ div#beaker span.bubble4 {
         border-radius: 10px;
     }
     
-.text-muted {
+    .text-muted {
         font-size: 0.4em;
     }
-    
     
     
 /*    -------------footer-------*/
@@ -581,7 +563,7 @@ footer {
     }
 
 .fullPage {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100%;
         min-height: 100%;
@@ -695,7 +677,7 @@ footer {
     }
 
 .fullPage {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100%;
         min-height: 100%;
