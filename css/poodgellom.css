@@ -403,24 +403,24 @@ div#beaker span.bubble4 {
 /* Extra small devices (phones, up to 480px) */
 
 @media screen and (max-width: 767px) {
-#discover {
+    #discover {
         font-size: 0.9em
     }
     
-#heroImage {
+    #heroImage {
         padding-top: 40%;
     }
     
-#main-image {
+    #main-image {
         padding-top: 5%;
       }
     
-.jumbotron {
-    padding-bottom: 78%;
+    .jumbotron {
+        padding-bottom: 78%;
     }
     
-.nav {
-    font-size: 1em;
+    .nav {
+        font-size: 1em;
     }
     
     #worm {
@@ -439,10 +439,10 @@ div#beaker span.bubble4 {
       
     
     .custom-main-navbar {
-        position: absolute;
+        position: fixed;
         left:0;
-        margin-top: 3%;
-        padding-bottom:20%;
+        top: 11%;
+        height:100%;
         width:100%;
         border-top:none;
         
@@ -459,8 +459,7 @@ div#beaker span.bubble4 {
     
     .custom-main-navbar>ul>li>a {
         text-align: center;
-        padding: 6.3%;
-        color: white;
+        margin-bottom: 6.3%;
         
     }
     
@@ -494,10 +493,14 @@ div#beaker span.bubble4 {
     #main-menu>div>div>.navbar-toggle{
         margin-left:-5%;
     }
+    #inspired-main-navbar>ul>li{
+        margin-left: -5%;
+        padding-left:0;
+        padding-right: 0;
+    }
     
     .custom-nav{
-        position:relative;
-        left: 0%;
+        position:fixed;
         width:100%;
        
     }
@@ -506,11 +509,15 @@ div#beaker span.bubble4 {
         margin-right:auto;
     }
     .custom-border{
-        border-top:7px;
-        border-left: 7px;
-        border-right:7px;
+        border-bottom:0.3em;
+        border-top:0.3em;
+        border-left: 0;
+        border-right:0;
+        border-style:solid;
+        border-image:url(../img/border.png) 15 stretch;
         
     }
+    
     
 /*    -------CONTENT------*/
     #content-body {
