@@ -3,7 +3,6 @@
 
 
 function worm(){
-   
     var endPoint= window.innerWidth/2 + "px";
     screenWidth = (window.innerWidth + 50) + "px";
     $( "#worm" ).animate(
@@ -16,10 +15,10 @@ function worm(){
                     if(wormPosition <= -50){
                         $("#worm").stop();
                         $("#worm").remove();
+                        }
                     }
-                }
         });    
-}
+    }
 
 worm();
 
@@ -73,16 +72,11 @@ $(window).scroll(
             
         })
  
-var jumbo = document.getElementById("jumbo");
-function setPadding(){
-     console.log(jumbo.clientHeight);
-var heightDiff = window.innerHeight - jumbo.clientHeight;
-    console.log(heightDiff);
-$(".jumbotron").css("padding-bottom", heightDiff + "px");
-}
 
-if(jumbo != null){
-    setPadding();
+function bubblePop(bubble, glow){
+    var bubbleHTML = '<span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\', \'' + glow +'\')"><span class ="' + glow + '"></span></span>'
+    $("." + bubble).remove();
+    $("#beaker").append(bubbleHTML);
 }
 
 
