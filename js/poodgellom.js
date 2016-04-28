@@ -58,25 +58,29 @@ $(window).scroll(
         {
             previousTop: 0
         }, 
-        function () {
-            
-        var currentTop = $(window).scrollTop();
-        if (currentTop < this.previousTop) {
-            $(".custom-main-menu").show();
-            
-        } else if(navbar.menuOut == "false" && currentTop >=20){
-            $(".custom-main-menu").hide();
+        function() {
+            var currentTop = $(window).scrollTop();
+            if (currentTop < this.previousTop) {
+                $(".custom-main-menu").show();
+            } else if(navbar.menuOut == "false" && currentTop >=20){
+                $(".custom-main-menu").hide();
             }
-        
             this.previousTop = currentTop;
-            
         })
  
 
 function bubblePop(bubble, glow){
-    var bubbleHTML = '<span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\', \'' + glow +'\')"><span class ="' + glow + '"></span></span>'
-    $("." + bubble).remove();
-    $("#beaker").append(bubbleHTML);
+    var bubbleHTML = '<span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\', \'' + glow +'\')"><span class ="' + glow + '"></span></span>';
+    $("." + bubble).animate({
+        width: "+=5",
+        height: "+=5",
+    },{
+        duration: 100,
+        complete: function(){
+            $("." + bubble).remove();
+            $("#beaker").append(bubbleHTML);
+        }
+    });
 }
 
 

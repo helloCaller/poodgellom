@@ -63,7 +63,7 @@ section {
 */
 
 .custom-border{
-    border-bottom:7px;
+    border-bottom:0.5em;
     border-top:0px;
     border-left: 0px;
     border-right:0px;
@@ -147,6 +147,19 @@ section {
     }
 }
 
+@keyframes fly{
+    0%{
+        left: -1500%;
+        opacity:0;
+        
+        }
+    35%{
+        left: 23%;
+        opacity:1;
+        
+    }
+}
+
 div#beaker span.glow {
     width: 100%;
     height: 100%;
@@ -162,7 +175,6 @@ div#beaker span.glow {
 div#beaker span.glow2 {
     width: 100%;
     height: 100%;
-    z-index: 10;
     position: relative;
     display: block;
     border-radius: 150px;
@@ -195,26 +207,36 @@ div#beaker span.glow4 {
     -moz-animation: greenPulse 5s infinite;
     -o-animation: greenPulse 5s infinite;
 }
+#beaker>span>span>img{
+    width:100%;
+    position:relative;
+    left: -10px;
+   
+}
 
 @keyframes bubbleUp {
     0% {
         bottom: 5%;
         -webkit-transform: scale(.9);
+        transform: scale(.9);
         opacity: 0
     }
     1% {
         bottom: 5%;
         -webkit-transform: scale(.3);
+        transform: scale(.3);
         opacity: 0
     }
     30% {
         bottom: 5%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
         -webkit-transform: scale(.9);
+        transform: scale(.9);
         opacity: 1
     }
     /*
@@ -227,21 +249,25 @@ div#beaker span.glow4 {
     0% {
         bottom: 6%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 0
     }
     1% {
         bottom: 6%;
         -webkit-transform: scale(.3);
+        transform: scale(.3);
         opacity: 0
     }
     30% {
         bottom: 7%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
         -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 1
     }
     /*
@@ -254,31 +280,37 @@ div#beaker span.glow4 {
     0% {
         bottom: 4%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 0
     }
     1% {
         bottom: 8%;
         -webkit-transform: scale(.5);
+        transform: scale(.5);
         opacity: 0
     }
     30% {
         bottom: 8%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
         -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 0
     }
     99% {
         bottom: 80%;
         -webkit-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0
     }
     100% {
         bottom: 80%;
         -webkit-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0
     }
 }
@@ -287,31 +319,37 @@ div#beaker span.glow4 {
     0% {
         bottom: 2%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 0
     }
     1% {
-        bottom: 2%x;
+        bottom: 2%;
         -webkit-transform: scale(.5);
+        transform: scale(.5);
         opacity: 0
     }
     30% {
         bottom: 2%;
         -webkit-transform: scale(.8);
+        transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
         -webkit-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0
     }
     99% {
         bottom: 80%;
         -webkit-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0
     }
     100% {
         bottom: 80%;
         -webkit-transform: scale(1.3);
+        transform: scale(1.3);
         opacity: 0
     }
 }
@@ -322,7 +360,7 @@ div#beaker span.bubble {
     height: 6em;
     position: absolute;
     display: block;
-    left: 25%;
+    left: 20%;
     bottom: 100%;
     border-radius: 100px;
     background: -moz-radial-gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 190, 200, .1), rgba(75, 190, 200, .3), rgba(255, 255, 255, .7));
@@ -334,7 +372,9 @@ div#beaker span.bubble {
     -o-animation: bubbleUp 14s infinite ease-in-out;
     -moz-animation: bubbleUp 14s infinite ease-in-out;
     z-index: 20000;
+    
 }
+
 
 div#beaker span.bubble2 {
     background: #fff;
@@ -362,7 +402,7 @@ div#beaker span.bubble3 {
     height: 3.5em;
     position: absolute;
     display: block;
-    left: 70%;
+    left: 75%;
     bottom: 50%;
     border-radius: 100px;
     background: -moz-radial-gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 190, 200, .1), rgba(75, 190, 200, .3), rgba(255, 255, 255, .7));
@@ -394,6 +434,14 @@ div#beaker span.bubble4 {
     -o-animation: bubbleUp4 7s infinite ease-in-out;
     -moz-animation: bubbleUp4 7s infinite ease-in-out;
     z-index: 20000      ;
+}
+
+#bee1{
+    animation: fly 14s infinite ease-in-out;
+    -webkit-animation: fly 14s infinite ease-in-out;
+    -o-animation: fly 14s infinite ease-in-out;
+    -moz-animation: fly 14s infinite ease-in-out;
+    
 }
 
 
@@ -441,7 +489,7 @@ div#beaker span.bubble4 {
     .custom-main-navbar {
         position: fixed;
         left:0;
-        top: 11%;
+        top: 10%;
         height:100%;
         width:100%;
         border-top:none;
@@ -480,7 +528,7 @@ div#beaker span.bubble4 {
     
     #imageNav{
         position:absolute;
-        left: 29%;
+        left: 26%;
         top: 1%;
         width: 40%;
         z-index: 10000;
@@ -511,11 +559,14 @@ div#beaker span.bubble4 {
     .custom-border{
         border-bottom:0.3em;
         border-top:0.3em;
-        border-left: 0;
-        border-right:0;
+        border-left: 0.3em;
+        border-right:0.3em;
         border-style:solid;
         border-image:url(../img/border.png) 15 stretch;
         
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: #2E5E08  ;
     }
     
     
@@ -618,103 +669,132 @@ footer {
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) and (max-width: 991px) {
-#discover {
+    #discover {
         font-size: 1.5em
     }
-#heroImage {
+    #heroImage {
         padding-top: 10%;
     }
-.jumbotron {
+    .jumbotron {
         padding-bottom: 10%;
         padding-left: 0;
     }
-#tag {
+    #tag {
         padding-top: 5%;
         text-align: center;
     }
-#worm {
+    #worm {
        display:none;
     
     }
-.customPanelBody {
+    .customPanelBody {
         font-size: 0.8em;
     }
-.customPanelHead {
+    .customPanelHead {
         font-size: 5em;
     }
     /*    ---------NAV-------*/
-.custom-nav {
+    .custom-nav {
         margin-left: 20%;
     }
-#imageNav{
-        position:absolute;
-        width: 15%;
-        margin-top:-1%;
-        margin-bottom: 4%;
-        background-color: rgba(250,250,250,0.9);
-        border-radius: 0.2em;
-        box-shadow: 1px 2px 1px grey;
+    #imageNav{
+        position:fixed;
+        top:1%;
+        width: 19%;
+        left:40%;
+        margin: 0;
+        padding:0;
         
+    }
+    .navbar-fixed-top{
+        top:6%;
+        
+    }
+    #main-menu{
+        top:0;
+    }
+     .navbar-default .navbar-nav>li>a {
+        color: white;
+    }
+    
+    
+    .custom-main-menu {
+        background-color: rgba(0, 42, 104, 0.7);
+        margin: 0;
+        padding: 0;
+        height: 4%;
+    }
+    .custom-nav{
+        margin-left:14%;
     }
     
 /*    -------CONTENT------*/
-#content-body {
+    #content-body {
         background-color: white;
         padding: 5%;
         margin: 4%;
         margin-top:14%;
         border-radius: 10px;
     }
-.text-muted {
+    .text-muted {
         font-size: 0.4em;
     }
+    #inspired-text{
+        position: relative;
+        margin: 5%;
+        
+}
+  
     
-/*    -------------footer-------*/
+    /*    -------FOOTER------*/
+    
 .contactFooter>.panel-default {
         border: none;
         background: transparent;
         box-shadow: none;
         font-family: Verdana;
         font-size: 0.8em;
-    }
+    
+}
 
 .contactFooter>.panel-default>.panel-heading {
         text-align: center;
-        font-size: 0.9em;
+        font-size: 1.2em;
         border: none;
         background: transparent;
-        padding-bottom: 0;
-    }
+        padding: 0;
+}
 
 .contactFooter>.panel-default>.panel-body>ul>li {
         list-style: none;
         margin: 0;
         padding: 0;
-        font-size: 0.7em;
-    }
+}
 
 .contactFooter>.panel-default>.panel-body>ul {
         margin: 0;
         padding: 0;
         text-align: center;
-    }
+}
+
 hr{
         padding:0;
         margin:0;
     }
 
-
 footer {
         position: absolute;
+        bottom:-160px;
         margin: 0;
         padding: 0;
         border: 0;
         width: 100%;
-        background-color: transparent;
-    }
+        background-color: rgba(255,255,255,0.5);
+
+}
 
 .fullPage {
-        position: relative;
+        position: absolute;
         width: 100%;
         height: 100%;
         min-height: 100%;
@@ -746,7 +826,7 @@ footer {
         padding-top: 5%;
         text-align: center;
     }
-#worm {
+        #worm {
         position:fixed;
         bottom: 0%;
         width: 5%;
@@ -757,33 +837,46 @@ footer {
     }
    
     /*    -----nav------*/
-.custom-nav {
+    .custom-nav {
         position:absolute;
-        margin-left: 19%;
+        margin-left: 24%;
 }
-#imageNav{
-        position:absolute;
-        width: 15%;
-        margin-top:-1%;
-        margin-bottom: 4%;
-        background-color: rgba(250,250,250,0.9);
-        border-radius: 0.2em;
-        box-shadow: 1px 2px 1px grey;
+    .navbar-fixed-top{
+        top:9%;
         
+    }
+    
+      #main-menu{
+        top:0;
+    }
+    #imageNav{
+        position:fixed;
+        top:0;
+        width: 15%;
+        left:42%;
+        margin: 0;
+        padding:0;
+        
+    }
+     .navbar-default .navbar-nav>li>a {
+        color: white;
     }
     
 
    /*    -------CONTENT-------*/
-#content-body {
+    #content-body {
         background-color: white;
         padding: 2%;
         margin: 4%;
         padding-top: 1%;
         border-radius: 10px;
 }
-#inspired-text{
+       #inspired-text{
+        position: relative;
         margin: 5%;
-    }
+        top: 10%;
+}
+  
     /*    -------FOOTER------*/
     
 .contactFooter>.panel-default {
@@ -924,7 +1017,7 @@ footer {
         position:fixed;
         top:0;
         width: 15%;
-        left:40%;
+        left:42%;
         margin: 0;
         padding:0;
     }
