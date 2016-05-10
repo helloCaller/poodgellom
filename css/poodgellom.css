@@ -40,21 +40,6 @@ section {
     z-index: 100;
 }
 
-/*
-.fullPage {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    min-height: 100%;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-repeat: no-repeat background-position: center;
-    background-image: url('../img/phoneback.jpg');
-}
-*/
-
 
 /*
 .container-fluid>.row>#discover {
@@ -62,14 +47,14 @@ section {
 }
 */
 
-.custom-border{
-    border-bottom:0.5em;
-    border-top:0px;
-    border-left: 0px;
-    border-right:0px;
-    border-style:solid;
+
+/*
+.custom-border{ 
+    border:0;
+    border-bottom:0.4em;
     border-image:url(../img/border.png) 15 stretch;
 }
+*/
 
 
 
@@ -133,7 +118,7 @@ section {
 
 
 
-/*----bubbles from http://www.css-jquery-design.com/2014/07/animated-bubbles-upwards-continuously-with-pure-css/*/
+/*----bubbles adpted from http://www.css-jquery-design.com/2014/07/animated-bubbles-upwards-continuously-with-pure-css/*/
 
 @keyframes greenPulse {
     0% {
@@ -147,18 +132,41 @@ section {
     }
 }
 
+
 @keyframes fly{
-    0%{
-        left: -1500%;
+   0% {
+        bottom: -25%;
+        -webkit-transform: scale(.9) rotate(-75deg);
+        transform: scale(.9) rotate(-75deg);
+        opacity: 1;
+    }
+    0.5% {
+       
+        -webkit-transform: scale(.5)rotate(-70deg);
+        transform: scale(.5) rotate(-70deg);
+        opacity: 1;
+    }
+    15% {
+        bottom: 5%;
+        -webkit-transform:scale(.8) rotate(-60deg);
+        transform:scale(.8) rotate(-60deg);
+        opacity: 1;
+    }
+    47.5% {
+        bottom: 90%;
+        -webkit-transform: scale(.9) rotate(0deg) ;
+        transform: scale(.9) rotate(0deg) ;
+        opacity: 1
+    }
+    50%{
+        bottom: 100%;
         opacity:0;
-        
-        }
-    35%{
-        left: 23%;
-        opacity:1;
-        
+    }
+    100%{
+        opacity:0;
     }
 }
+
 
 div#beaker span.glow {
     width: 100%;
@@ -207,12 +215,14 @@ div#beaker span.glow4 {
     -moz-animation: greenPulse 5s infinite;
     -o-animation: greenPulse 5s infinite;
 }
+/*
 #beaker>span>span>img{
     width:100%;
     position:relative;
     left: -10px;
    
 }
+*/
 
 @keyframes bubbleUp {
     0% {
@@ -354,6 +364,7 @@ div#beaker span.glow4 {
     }
 }
 
+
 div#beaker span.bubble {
     background: #fff;
     width: 6em;
@@ -436,11 +447,19 @@ div#beaker span.bubble4 {
     z-index: 20000      ;
 }
 
-#bee1{
-    animation: fly 14s infinite ease-in-out;
-    -webkit-animation: fly 14s infinite ease-in-out;
-    -o-animation: fly 14s infinite ease-in-out;
-    -moz-animation: fly 14s infinite ease-in-out;
+#bee1 {
+    
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    display: block;
+    left: 20%;
+    bottom: 100%;
+    animation: fly 28s infinite ease-in-out;
+    -webkit-animation: fly 28s infinite ease-in;
+    -o-animation: fly 28s infinite ease-in-out;
+    -moz-animation: fly 28s infinite ease-in-out;
+    z-index: 20000;
     
 }
 
@@ -494,7 +513,7 @@ div#beaker span.bubble4 {
         width:100%;
         border-top:none;
         
-        background: url("../img/menu_back.jpg") no-repeat center center fixed; 
+        background: url("../img/phoneback.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -503,11 +522,11 @@ div#beaker span.bubble4 {
     
     .custom-nav>li{
         font-size: 1.5em;
+        margin-bottom: 6.3%;
     }
     
-    .custom-main-navbar>ul>li>a {
-        text-align: center;
-        margin-bottom: 6.3%;
+    .custom-nav>li>a {
+       padding-top: 8px;
         
     }
     
@@ -550,24 +569,24 @@ div#beaker span.bubble4 {
     .custom-nav{
         position:fixed;
         width:100%;
+        margin:0;
+        left:0;
+        text-align:center; 
        
     }
     .container-fluid>.navbar-collapse {
         margin-left:auto;
         margin-right:auto;
     }
-    .custom-border{
-        border-bottom:0.3em;
-        border-top:0.3em;
-        border-left: 0.3em;
-        border-right:0.3em;
-        border-style:solid;
-        border-image:url(../img/border.png) 15 stretch;
-        
-    }
+
     .navbar-default .navbar-nav>li>a {
-        color: #2E5E08  ;
+        color: white;
     }
+    .custom-border{ 
+    border:0.4em;
+    border-style:solid;
+    border-image:url(../img/border.png) 20 stretch;
+}
     
     
 /*    -------CONTENT------*/
@@ -583,7 +602,15 @@ div#beaker span.bubble4 {
         font-size: 0.4em;
     }
     
-   
+    .tint{
+        border-top: 1px solid white;
+        padding-top: 5%;
+        position: absolute;
+        left:0;
+        height:100%;
+        width:100%;
+        background-color: rgba(0, 42, 104, 0.55);
+    }
     
 /*    -------------footer-------*/
 .contactFooter>.panel-default {
@@ -727,6 +754,17 @@ footer {
     .custom-nav{
         margin-left:14%;
     }
+/*
+        .custom-border{ 
+        border:0;
+        border-bottom:0.4em;
+        border-image:url(../img/border.png) 15 stretch;
+}
+*/
+       .custom-nav>li>.active{
+/*        padding-top: 3px;*/
+        padding-bottom: 0;
+    }
     
 /*    -------CONTENT------*/
     #content-body {
@@ -845,7 +883,6 @@ footer {
         top:9%;
         
     }
-    
       #main-menu{
         top:0;
     }
@@ -860,6 +897,11 @@ footer {
     }
      .navbar-default .navbar-nav>li>a {
         color: white;
+    }
+    
+       .custom-nav>li>.active{
+        border-bottom: 2px solid white;
+        padding-bottom: 0;
     }
     
 
@@ -955,29 +997,13 @@ footer {
         margin-left: 11%;
         margin-right: 11%;
     }
-.container-fluid>.navbar-collapse {
-        padding-top: 1%;
-    
-    }
 #heroImage {
         padding-top: 8%;
         width: 80%;
         height: 80%;
         left: 100px;
     }
-#tag {
-        padding-bottom: 1%;
-        text-align: center;
-    }
-    /*
-    #corner-image{
-        margin:0.4%;
-    }
-*/
-#tag {
-        padding-top: 5%;
-        text-align: center;
-    }
+
 #worm {
         width: 4.5%;
         height: 4.5%;
@@ -995,6 +1021,8 @@ footer {
 /*    -----nav------*/
 
     .custom-main-menu {
+        position:absolute;
+        width:100%;
         background-color: rgba(0, 42, 104, 0.7);
         margin: 0;
         padding: 0;
@@ -1003,8 +1031,18 @@ footer {
     }
     .custom-nav {
         position:absolute;
-        margin-left: 30%;
+        left: 26%;
     }
+    .custom-nav>li>.active{
+/*        padding-top: 3px;*/
+        border-bottom: 2px solid white;
+        padding-bottom: 0;
+    }
+    .custom-nav>li>a{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
     .navbar-fixed-top{
         top:11%;
         
@@ -1015,18 +1053,42 @@ footer {
 
     #imageNav{
         position:fixed;
-        top:0;
+        top: 0%;
         width: 15%;
         left:42%;
         margin: 0;
         padding:0;
     }
     
-    .navbar-default .navbar-nav>li>a {
-        color: white;
-        padding-top: 3%;
-        padding-bottom: 3%;
+
+    
+    #inspired-main-navbar{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
     }
+    .navbar-header{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+    }
+    .custom-nav-container{
+        position:relative;
+        height:100%;
+        width:100%;
+        top:0;
+        padding:0;
+        
+    }
+/*
+    .custom-border{ 
+        border:0;
+        border-bottom:0.4em;
+        border-image:url(../img/border.png) 15 stretch;
+}
+*/
     
   
     
@@ -1044,6 +1106,7 @@ footer {
         margin: 5%;
         top: 10%;
 }
+    
     
     
     .fullPage {
