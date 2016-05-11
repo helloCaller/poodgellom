@@ -133,25 +133,30 @@ section {
 }
 
 
+
+
 @keyframes fly{
    0% {
+        left:-10%;
         bottom: -25%;
         -webkit-transform: scale(.9) rotate(-75deg);
         transform: scale(.9) rotate(-75deg);
         opacity: 1;
     }
     0.5% {
-       
         -webkit-transform: scale(.5)rotate(-70deg);
         transform: scale(.5) rotate(-70deg);
         opacity: 1;
     }
     15% {
+        left:20%;
         bottom: 5%;
         -webkit-transform:scale(.8) rotate(-60deg);
         transform:scale(.8) rotate(-60deg);
         opacity: 1;
+    
     }
+    
     47.5% {
         bottom: 90%;
         -webkit-transform: scale(.9) rotate(0deg) ;
@@ -159,6 +164,7 @@ section {
         opacity: 1
     }
     50%{
+        
         bottom: 100%;
         opacity:0;
     }

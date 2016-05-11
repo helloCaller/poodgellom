@@ -84,21 +84,32 @@ function bubblePop(bubble, glow, bee) {
     },{
         duration: 100,
         complete: function() {
+            $(`#${bee}`).stop();
             $(`.${bubble}`).remove();
             $("#beaker").append(bubbleHTML);
+            
+            $(`#${bee}`).animate({
+                left: "+=35000%"
+            },{
+                duration: 2000,
+                complete: function() {
+                $(`#${bee}`).remove();
+        }
+        
+    });
         }
         
     });
     
-      $(`#${bee}`).animate({
-        left: "+=90%"
-    },{
-        duration: 2000,
-        complete: function() {
-            $(`#${bee}`).remove();
-        }
-        
-    });
+//      $(`#${bee}`).animate({
+//        left: "+=90%"
+//    },{
+//        duration: 2000,
+//        complete: function() {
+//            $(`#${bee}`).remove();
+//        }
+//        
+//    });
     
    
     
