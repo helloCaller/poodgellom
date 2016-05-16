@@ -11,8 +11,8 @@
         { "left": '-=' + endPoint + ''
             },
         { duration: 100000,
-          step:function() {
-                let wormPosition = $worm.position().left;
+          step: function () {
+                var wormPosition = $worm.position().left;
                     if (wormPosition <= -50) {
                         $worm.stop();
                         $worm.remove();
@@ -21,19 +21,19 @@
         });    
     }());
 
-const navbar = {
+var navbar = {
     menuOut: "false",
     image: document.getElementById("imageNav"),
 };
 
 if (navbar.image !== null) {
-    const currentImageWidth = navbar.image.clientWidth;
+    var currentImageWidth = navbar.image.clientWidth;
 }
 
 
 $(".navbar-toggle").click(function() {
-    const $wrapper = $(".wrapper");
-    const $icon = $("#icon");
+    var $wrapper = $(".wrapper");
+    var $icon = $("#icon");
     
      if (navbar.menuOut === "false") {
         navbar.menuOut = "true";
@@ -75,8 +75,9 @@ $(window).scroll(
     );
  
 
-function bubblePop(bubble, glow, bee) {
-    const bubbleHTML = `<img id = "${bee}" src = "img/bee.png"> <span class="${bubble}" onclick="bubblePop('${bubble}','${glow}', '${bee}')"><span class ="${glow}"></span></span>`;
+function bubblePop(bubble, glow, bee, pikk) {
+    //ES6
+/*    const bubbleHTML = `<img id = "${bee}" src = "img/bee.png"> <span class="${bubble}" onclick="bubblePop('${bubble}','${glow}', '${bee}')"><span class ="${glow}"></span></span>`;
     
     $(`.${bubble}`).animate({
         width: "+=5",
@@ -89,7 +90,7 @@ function bubblePop(bubble, glow, bee) {
             $("#beaker").append(bubbleHTML);
             
             $(`#${bee}`).animate({
-                left: "+=35000%"
+                left: "+=1800%"
             },{
                 duration: 2000,
                 complete: function() {
@@ -101,19 +102,46 @@ function bubblePop(bubble, glow, bee) {
         
     });
     
-//      $(`#${bee}`).animate({
-//        left: "+=90%"
-//    },{
-//        duration: 2000,
-//        complete: function() {
-//            $(`#${bee}`).remove();
-//        }
-//        
-//    });
+ */
     
+    var bubbleHTML = '<img id = "' + bee + '" src = "img/bee.png" alt="flying bee"><img id="' + pikk + '" src="media/pikk.gif" alt="pikk swarm"> <span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\',\'' + glow + '\',\'' + bee + '\',\'' + pikk + '\')"><span class ="' + glow + '"></span></span>';
+    console.log(bubbleHTML);
+    
+    $('.' + bubble).animate({
+        width: "+=5",
+        height: "+=5",
+    },{
+        duration: 100,
+        complete: function() {
+            $('.' + bubble).remove();
+//            $("#beaker").append(bubbleHTML);
+            setTimeout(function(){
+                $('#' + bee + ',#' + pikk).remove();
+//                $('#' + pikk).remove();
+                $("#beaker").append(bubbleHTML);
+            },5000);
+            
+        }
+        
+    });
+    
+    var beeElement = document.getElementById('"' + bee + '"') 
+    $('#' + bee).stop();
+    $('#' + bee + ',#' + pikk).animate({
+                left: 140000
+            },{
+                duration: 50000,
+        
+            });
+//     $('#' + pikk).animate({
+//                left: 20000
+//            },{
+//                duration: 10000,
+//        
+//            });
    
     
-}
+};
 
 
 

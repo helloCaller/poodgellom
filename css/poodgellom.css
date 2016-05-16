@@ -132,33 +132,39 @@ section {
     }
 }
 
-
+@keyframes flyAway{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 2000%;
+    }
+}
 
 
 @keyframes fly{
    0% {
-        left:-10%;
         bottom: -25%;
-        -webkit-transform: scale(.9) rotate(-75deg);
-        transform: scale(.9) rotate(-75deg);
-        opacity: 1;
-    }
-    0.5% {
-        -webkit-transform: scale(.5)rotate(-70deg);
-        transform: scale(.5) rotate(-70deg);
+       -moz-transform: scale(.9) rotate(0deg);
+        -o-transform: scale(.9) rotate(0deg);
+        -webkit-transform: scale(.9) rotate(0deg);
+        transform: scale(.9) rotate(0deg);
         opacity: 1;
     }
     15% {
-        left:20%;
         bottom: 5%;
-        -webkit-transform:scale(.8) rotate(-60deg);
-        transform:scale(.8) rotate(-60deg);
+        -moz-transform:scale(.8) rotate(-30deg);
+        -o-transform:scale(.8) rotate(-30deg);
+        -webkit-transform:scale(.8) rotate(-30deg);
+        transform:scale(.8) rotate(-30deg);
         opacity: 1;
     
     }
     
     47.5% {
         bottom: 90%;
+        -moz-transform: scale(.9) rotate(0deg) ;
+        -o-transform: scale(.9) rotate(0deg) ;
         -webkit-transform: scale(.9) rotate(0deg) ;
         transform: scale(.9) rotate(0deg) ;
         opacity: 1
@@ -233,24 +239,32 @@ div#beaker span.glow4 {
 @keyframes bubbleUp {
     0% {
         bottom: 5%;
+        -moz-transform: scale(.9);
+        -o-transform: scale(.9);
         -webkit-transform: scale(.9);
         transform: scale(.9);
         opacity: 0
     }
     1% {
         bottom: 5%;
+        -moz-transform: scale(.3);
+        -o-transform: scale(.3);
         -webkit-transform: scale(.3);
         transform: scale(.3);
         opacity: 0
     }
     30% {
         bottom: 5%;
+        -o-transform: scale(.8);
+        -moz-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
+        -moz-transform: scale(.9);
+        -o-transform: scale(.9);
         -webkit-transform: scale(.9);
         transform: scale(.9);
         opacity: 1
@@ -264,24 +278,32 @@ div#beaker span.glow4 {
 @keyframes bubbleUp2 {
     0% {
         bottom: 6%;
+        -moz-transform: scale(.8);
+        -o-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 0
     }
     1% {
         bottom: 6%;
+        -moz-transform: scale(.3);
+        -o-transform: scale(.3);
         -webkit-transform: scale(.3);
         transform: scale(.3);
         opacity: 0
     }
     30% {
         bottom: 7%;
+        -moz-transform: scale(.8);
+        -o-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1
@@ -295,36 +317,48 @@ div#beaker span.glow4 {
 @keyframes bubbleUp3 {
     0% {
         bottom: 4%;
+        -o-transform: scale(.8);
+        -moz-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 0
     }
     1% {
         bottom: 8%;
+        -o-transform: scale(.5);
+        -moz-transform: scale(.5);
         -webkit-transform: scale(.5);
         transform: scale(.5);
         opacity: 0
     }
     30% {
         bottom: 8%;
+        -o-transform: scale(.8);
+        -moz-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 0
     }
     99% {
         bottom: 80%;
+        -o-transform: scale(1.3);
+        -moz-transform: scale(1.3);
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0
     }
     100% {
         bottom: 80%;
+        -moz-transform: scale(1.3);
+        -o-transform: scale(1.3);
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0
@@ -334,36 +368,48 @@ div#beaker span.glow4 {
 @keyframes bubbleUp4 {
     0% {
         bottom: 2%;
+        -o-transform: scale(.8);
+        -moz-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 0
     }
     1% {
         bottom: 2%;
+        -o-transform: scale(.5);
+        -moz-transform: scale(.5);
         -webkit-transform: scale(.5);
         transform: scale(.5);
         opacity: 0
     }
     30% {
         bottom: 2%;
+        -moz-transform: scale(.8);
+        -o-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
         opacity: 1
     }
     95% {
         bottom: 90%;
+        -moz-transform: scale(1.3);
+        -o-transform: scale(1.3);
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0
     }
     99% {
         bottom: 80%;
+        -moz-transform: scale(1.3);
+        -o-transform: scale(1.3);
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0
     }
     100% {
         bottom: 80%;
+        -moz-transform: scale(1.3);
+        -o-transform: scale(1.3);
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
         opacity: 0
@@ -468,6 +514,19 @@ div#beaker span.bubble4 {
     z-index: 20000;
     
 }
+#pikkSwarm1 {
+    width:20em;
+    position: absolute;
+    display: block;
+    left: -85%;
+    bottom: 100%;
+    animation: fly 28s infinite ease-in-out;
+    -webkit-animation: fly 28s infinite ease-in;
+    -o-animation: fly 28s infinite ease-in-out;
+    -moz-animation: fly 28s infinite ease-in-out;
+    z-index: 20000;
+    
+}
 
 
 /*----Media Queries----*/
@@ -561,7 +620,7 @@ div#beaker span.bubble4 {
     
     .navbar-toggle{
         margin-top: -7%;
-        margin-left: -17%;
+        margin-left: -7%;
     }
     #main-menu>div>div>.navbar-toggle{
         margin-left:-5%;
@@ -617,6 +676,7 @@ div#beaker span.bubble4 {
         width:100%;
         background-color: rgba(0, 42, 104, 0.55);
     }
+    
     
 /*    -------------footer-------*/
 .contactFooter>.panel-default {
