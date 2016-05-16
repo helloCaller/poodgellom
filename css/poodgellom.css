@@ -153,10 +153,10 @@ section {
     }
     15% {
         bottom: 5%;
-        -moz-transform:scale(.8) rotate(-30deg);
-        -o-transform:scale(.8) rotate(-30deg);
-        -webkit-transform:scale(.8) rotate(-30deg);
-        transform:scale(.8) rotate(-30deg);
+        -moz-transform:scale(.8) rotate(-50deg);
+        -o-transform:scale(.8) rotate(-50deg);
+        -webkit-transform:scale(.8) rotate(-50deg);
+        transform:scale(.8) rotate(-50deg);
         opacity: 1;
     
     }
@@ -172,12 +172,49 @@ section {
     50%{
         
         bottom: 100%;
-        opacity:0;
+        opacity:1;
     }
     100%{
         opacity:0;
     }
 }
+@keyframes pikkChase{
+   0% {
+        bottom: -50%;
+       -moz-transform: scale(.9) rotate(0deg);
+        -o-transform: scale(.9) rotate(0deg);
+        -webkit-transform: scale(.9) rotate(0deg);
+        transform: scale(.9) rotate(0deg);
+        opacity: 1;
+    }
+    15% {
+        bottom: -20%;
+        -moz-transform:scale(.8) rotate(-50deg);
+        -o-transform:scale(.8) rotate(-50deg);
+        -webkit-transform:scale(.8) rotate(-50deg);
+        transform:scale(.8) rotate(-50deg);
+        opacity: 1;
+    
+    }
+    
+    47.5% {
+        bottom: 65%;
+        -moz-transform: scale(.9) rotate(0deg) ;
+        -o-transform: scale(.9) rotate(0deg) ;
+        -webkit-transform: scale(.9) rotate(0deg) ;
+        transform: scale(.9) rotate(0deg) ;
+        opacity: 1
+    }
+    50%{
+        
+        bottom: 75%;
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
 
 
 div#beaker span.glow {
@@ -518,12 +555,12 @@ div#beaker span.bubble4 {
     width:20em;
     position: absolute;
     display: block;
-    left: -85%;
+    left: -600px;
     bottom: 100%;
-    animation: fly 28s infinite ease-in-out;
-    -webkit-animation: fly 28s infinite ease-in;
-    -o-animation: fly 28s infinite ease-in-out;
-    -moz-animation: fly 28s infinite ease-in-out;
+    animation: pikkChase 28s infinite ease-in-out;
+    -webkit-animation: pikkChase 28s infinite ease-in;
+    -o-animation: pikkChase 28s infinite ease-in-out;
+    -moz-animation: pikkChase 28s infinite ease-in-out;
     z-index: 20000;
     
 }

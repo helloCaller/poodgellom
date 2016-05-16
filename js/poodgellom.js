@@ -119,7 +119,7 @@ function bubblePop(bubble, glow, bee, pikk) {
                 $('#' + bee + ',#' + pikk).remove();
 //                $('#' + pikk).remove();
                 $("#beaker").append(bubbleHTML);
-            },5000);
+            },6900);
             
         }
         
@@ -130,7 +130,7 @@ function bubblePop(bubble, glow, bee, pikk) {
     $('#' + bee + ',#' + pikk).animate({
                 left: 140000
             },{
-                duration: 50000,
+                duration: 70000,
         
             });
 //     $('#' + pikk).animate({
