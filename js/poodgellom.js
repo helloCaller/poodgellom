@@ -104,6 +104,9 @@ function bubblePop(bubble, glow, bee, pikk) {
     
  */
     
+    var $beeElement = $('#' + bee);
+    var $pikkElement = $('#' + pikk);
+    
     var bubbleHTML = '<img id = "' + bee + '" src = "img/bee.png" alt="flying bee"><img id="' + pikk + '" src="media/pikk.gif" alt="pikk swarm"> <span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\',\'' + glow + '\',\'' + bee + '\',\'' + pikk + '\')"><span class ="' + glow + '"></span></span>';
     console.log(bubbleHTML);
     
@@ -114,10 +117,7 @@ function bubblePop(bubble, glow, bee, pikk) {
         duration: 100,
         complete: function() {
             $('.' + bubble).remove();
-//            $("#beaker").append(bubbleHTML);
             setTimeout(function(){
-                $('#' + bee + ',#' + pikk).remove();
-//                $('#' + pikk).remove();
                 $("#beaker").append(bubbleHTML);
             },6900);
             
@@ -125,22 +125,24 @@ function bubblePop(bubble, glow, bee, pikk) {
         
     });
     
-    var beeElement = document.getElementById('"' + bee + '"') 
-    $('#' + bee).stop();
-    $('#' + bee + ',#' + pikk).animate({
+    $('#' + bee + ',#' + pikk).stop().animate({
                 left: 140000
             },{
                 duration: 70000,
-        
-            });
-//     $('#' + pikk).animate({
-//                left: 20000
-//            },{
-//                duration: 10000,
-//        
-//            });
-   
-    
+                step: function () {
+                    var beePosition = $beeElement.position().left;
+                    var pikkPosition = $pikkElement.position().left;
+                        
+                    if (beePosition > window.innerWidth) {
+                        $beeElement.stop().remove();
+                            }
+                        
+                    if (pikkPosition > (window.innerWidth - 100)) {
+                        $pikkElement.stop().remove();
+                            }
+                        },
+                });
+     
 };
 
 
