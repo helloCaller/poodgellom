@@ -137,7 +137,7 @@ function bubblePop(bubble, glow, bee, pikk) {
                         $beeElement.stop().remove();
                             }
                         
-                    if (pikkPosition > (window.innerWidth - 100)) {
+                    if (pikkPosition > (window.innerWidth - 125)) {
                         $pikkElement.stop().remove();
                             }
                         },

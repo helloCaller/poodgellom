@@ -210,6 +210,9 @@ section {
         bottom: 75%;
         opacity:1;
     }
+    55%{
+        opacity:0;
+    }
     100%{
         opacity:0;
     }
