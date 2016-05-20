@@ -267,14 +267,7 @@ div#beaker span.glow4 {
     -moz-animation: greenPulse 5s infinite;
     -o-animation: greenPulse 5s infinite;
 }
-/*
-#beaker>span>span>img{
-    width:100%;
-    position:relative;
-    left: -10px;
-   
-}
-*/
+
 
 @keyframes bubbleUp {
     0% {
@@ -476,6 +469,9 @@ div#beaker span.bubble {
     -moz-animation: bubbleUp 14s infinite ease-in-out;
     z-index: 20000;
     
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    
 }
 
 
@@ -497,6 +493,9 @@ div#beaker span.bubble2 {
     -o-animation: bubbleUp2 18s infinite ease-in-out;
     -moz-animation: bubbleUp2 18s infinite ease-in-out;
     z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 div#beaker span.bubble3 {
@@ -517,6 +516,9 @@ div#beaker span.bubble3 {
     -o-animation: bubbleUp3 10s infinite ease-in-out;
     -moz-animation: bubbleUp3 10s infinite ease-in-out;
     z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 div#beaker span.bubble4 {
@@ -537,6 +539,53 @@ div#beaker span.bubble4 {
     -o-animation: bubbleUp4 7s infinite ease-in-out;
     -moz-animation: bubbleUp4 7s infinite ease-in-out;
     z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+div#beaker span.bubble5 {
+   background: #fff;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    display: block;
+    left: 82%;
+    bottom: 100%;
+    border-radius: 100px;
+    background: -moz-radial-gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 190, 200, .1), rgba(75, 190, 200, .3), rgba(255, 255, 255, .7));
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(75, 255, 100, .2)), to(rgba(255, 255, 100, .7)));
+    background: gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 255, 200, .1), rgba(75, 255, 200, .3), rgba(255, 255, 255, .7));
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(9, 255, 100, 0.1) 51%, rgba(9, 255, 100, 0.3) 71%, rgba(9, 255, 100, .7) 100%);
+    animation: bubbleUp 12s infinite ease-in-out;
+    -webkit-animation: bubbleUp 12s infinite ease-in;
+    -o-animation: bubbleUp 12s infinite ease-in-out;
+    -moz-animation: bubbleUp 12s infinite ease-in-out;
+    z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+div#beaker span.bubble6 {
+   background: #fff;
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    display: block;
+    left: 5%;
+    bottom: 100%;
+    border-radius: 100px;
+    background: -moz-radial-gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 190, 200, .1), rgba(75, 190, 200, .3), rgba(255, 255, 255, .7));
+    background: -webkit-gradient(radial, center center, 0, center center, 100, from(rgba(75, 255, 100, .2)), to(rgba(255, 255, 100, .7)));
+    background: gradient(center 45deg, circle closest-corner, rgba(75, 190, 200, 0), rgba(75, 255, 200, .1), rgba(75, 255, 200, .3), rgba(255, 255, 255, .7));
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0) 0%, rgba(9, 255, 100, 0.1) 51%, rgba(9, 255, 100, 0.3) 71%, rgba(9, 255, 100, .7) 100%);
+    animation: bubbleUp3 12s infinite ease-in-out;
+    -webkit-animation: bubbleUp3 12s infinite ease-in;
+    -o-animation: bubbleUp3 12s infinite ease-in-out;
+    -moz-animation: bubbleUp3 12s infinite ease-in-out;
+    z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
 }
 
 #bee1 {
@@ -553,10 +602,13 @@ div#beaker span.bubble4 {
     -moz-animation: fly 28s infinite ease-in-out;
     z-index: 20000;
     
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    
 }
 #pikkSwarm1 {
-    width:20em;
-    height:20em;
+    width: 20em;
+    height: 20em;
     position: absolute;
     display:block;
     left: -600px;
@@ -566,6 +618,9 @@ div#beaker span.bubble4 {
     -o-animation: pikkChase 28s infinite ease-in-out;
     -moz-animation: pikkChase 28s infinite ease-in-out;
     z-index: 20000;
+    
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
     
 }
 
@@ -591,22 +646,28 @@ div#beaker span.bubble4 {
     .jumbotron {
         padding-bottom: 78%;
     }
-    
-    .nav {
-        font-size: 1em;
-    }
-    
     #worm {
         display:none;
     
     }
+    #pikkSwarm1 {
+    width: 11em;
+    height: 11em;
+    }
     
+    .bubble3{
+        visibility: hidden;
+        display:none;
+    }
     
 /*    ---------NAV-------*/
+     .nav {
+        font-size: 1em;
+    }
     .custom-main-menu {
         margin: 0;
         padding:9%;
-        width: 105%;
+        width: 100%;
         background: rgba(0, 42, 104, 0.7);
         border-bottom: 1px solid white;
     }
@@ -614,7 +675,8 @@ div#beaker span.bubble4 {
     .custom-main-navbar {
         position: fixed;
         left:0;
-        top: 10%;
+        top: 8%;
+        margin-top:3.5%;
         height:100%;
         width:100%;
         border-top:none;
@@ -653,7 +715,7 @@ div#beaker span.bubble4 {
     
     #imageNav{
         position:absolute;
-        left: 26%;
+        left: 30%;
         top: 1%;
         width: 40%;
         z-index: 10000;
@@ -694,7 +756,12 @@ div#beaker span.bubble4 {
     border-style:solid;
     border-image:url(../img/border.png) 20 stretch;
 }
-    
+    .navbar-header{
+        width:100%;
+    }
+    .navbar-collapse.in{
+        overflow-y: hidden;
+    }
     
 /*    -------CONTENT------*/
     #content-body {
@@ -765,7 +832,7 @@ footer {
     }
 
 .fullPage {
-        position: relative;
+        position: fixed;
         width: 100%;
         height: 100%;
         min-height: 100%;
@@ -776,10 +843,7 @@ footer {
         background-repeat: no-repeat background-position: center;
         background-image: url('../img/phoneback.jpg');
     }
-    .home{
-        position: absolute;
-        overflow: hidden;
-    }
+
     
 }
 @media screen and (max-width: 767px) and (orientation: landscape){
@@ -1141,6 +1205,7 @@ footer {
     }
     
 /*    -----nav------*/
+  
 
     .custom-main-menu {
         position:absolute;
@@ -1152,8 +1217,9 @@ footer {
         height: 6%;
     }
     .custom-nav {
+        position: relative;
         width:100%;
-        margin-left: 18%;
+        left:15%;
     }
     .custom-nav>li>.active{
 /*        padding-top: 3px;*/
@@ -1190,10 +1256,10 @@ footer {
 
     
     #inspired-main-navbar{
-        position:absolute;
+        position:relative;
         height:100%;
         width:100%;
-        top:0;
+        left:4%;
     }
     .navbar-header{
         width:100%;
@@ -1202,18 +1268,10 @@ footer {
         position:relative;
         height:100%;
         width:100%;
-        top:0;
-        padding:0;
+        
         
     }
-/*
-    .custom-border{ 
-        border:0;
-        border-bottom:0.4em;
-        border-image:url(../img/border.png) 15 stretch;
-}
-*/
-    
+   
   
     
 /*    -------CONTENT-------*/

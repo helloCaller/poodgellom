@@ -104,15 +104,16 @@ function bubblePop(bubble, glow, bee, pikk) {
     
  */
     
-    var $beeElement = $('#' + bee);
-    var $pikkElement = $('#' + pikk);
+   
+    
     
     var bubbleHTML = '<img id = "' + bee + '" src = "img/bee.png" alt="flying bee"><img id="' + pikk + '" src="media/pikk.gif" alt="pikk swarm"> <span class="' + bubble + '" onclick="bubblePop(\'' + bubble + '\',\'' + glow + '\',\'' + bee + '\',\'' + pikk + '\')"><span class ="' + glow + '"></span></span>';
-    console.log(bubbleHTML);
+    
     
     $('.' + bubble).animate({
         width: "+=5",
         height: "+=5",
+        left: "-=1",
     },{
         duration: 100,
         complete: function() {
@@ -125,7 +126,14 @@ function bubblePop(bubble, glow, bee, pikk) {
         
     });
     
-    $('#' + bee + ',#' + pikk).stop().animate({
+    if (bee != "null" & pikk != "null"){
+        var $beeElement = $('#' + bee);
+        var $pikkElement = $('#' + pikk);
+    
+        var pikkWidthString = $pikkElement.css("width");
+        var pikkWidthNum = pikkWidthString.slice(0,(pikkWidthString.length - 2));
+    
+        $('#' + bee + ',#' + pikk).stop().animate({
                 left: 140000
             },{
                 duration: 70000,
@@ -136,12 +144,15 @@ function bubblePop(bubble, glow, bee, pikk) {
                     if (beePosition > window.innerWidth) {
                         $beeElement.stop().remove();
                             }
-                        
-                    if (pikkPosition > (window.innerWidth - 125)) {
+                      
+                   
+                    
+                    if (pikkPosition > window.innerWidth) {
                         $pikkElement.stop().remove();
                             }
                         },
                 });
+    }
      
 };
 
