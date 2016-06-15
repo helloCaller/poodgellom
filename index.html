@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html dir="LTR" lang="en-CA">
+<html lang="en">
 
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-    <meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <meta name="description" content="blank">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Poodgellom Chronicles, a children's story created by Michael and Monica Smith ">
+    <meta name="author" content="Garwood">
+    
+    
+    
+    <title>Poodgellom Chronicles</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/poodgellom.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="/images/favicon.png (or ico?)" type="image/x-icon" />
+    <link href="css/mainPage.css" rel="stylesheet">
 
-    <title>Poodgellom Chronicles</title>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav id="main-menu" class="navbar navbar-default navbar-center navbar-fixed-top custom-main-menu">
+    <!-- Navigation -->
+      <nav id="main-menu" class="navbar navbar-default navbar-center navbar-fixed-top custom-main-menu">
         <h1 class="hidden-section-heading">Main Menu</h1>
         <div class="container">
             <div class="navbar-header">
@@ -41,18 +53,14 @@
         </div>
     </div>
 </nav>
-    
-    <div class="fullPage wrapper home">
 
-        <header>
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <div class="container-fluid block-center">
-                        <div class="row">
-                            <div class="col-sm-12 block-center" id="heroImage">
-                                <img src="img/poodgellomChronicles.svg" class="img-responsive" alt="Poodgelom Chronicles">
-                            </div>
-                        </div>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 real-intro-body">
+                        <img id="hero" src="img/poodgellomChronicles.svg" class="img-responsive" alt="Poodgelom Chronicles">
                     </div>
                 </div>
             </div>
@@ -61,12 +69,12 @@
                     <h1 class="text-center" id="discover">Discover the world of Poodgelloms</h1>
                 </div>
             </div>
-
-        </header>
-       
-
-    </div>
-     <div id="beaker">
+        </div>
+        
+         
+    </header>
+    
+    <div id="beaker">
          <img id="bee1" src="img/bee.png" alt="flying bee">
          <img id="pikkSwarm1" src="media/pikk.gif" alt="pikk swarm">
          
@@ -90,14 +98,92 @@
                 <span class="glow4"></span>
             </span>
         </div>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="about-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About <i>Ephemeral</i></h2>
+                <p>Live performance has a beautiful, fleeting quality, as it only exists in the moment of its performance. In contrast, digital recordings have the potential – through copying, transferring, and duplicating – to remain on a device, server, or hard drive somewhere indefinitely. <i>Ephemeral</i> blends these two worlds, while obstructing its digital permanence through the use of Augmented Reality (AR), and by forming a dependent connection between the digital and physical (in this case the Ephemeral App and a card, available for print below). The performance cannot manifest without the two elements, creating an experience that allows you, the viewer, to choose how long it exists for. </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>To view <i>Ephemeral</i>, follow the steps below</h2>
+                    <ol class= "text-left" id="steps">
+                        <li><p> Download <i>Ephemeral App</i> from the apple App Store* &nbsp <a href="https://geo.itunes.apple.com/ca/app/ephemeral-app/id1014853575?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;" title="link to app store"></a></p>
+                        </li>
+                        <hr>
+                        <li><p> Print out PDF that contains the AR target by clicking this image &nbsp <img id="card" src = "img/cardfront2.jpg" alt="link to pdf" title="link to pdf"></p>
+                        </li>
+                        <hr>
+                        <li><p> Open the app, hit start, and point your device's camera at the target image</p>
+                        </li>
+                        <hr>
+                        <li><p> Watch as the performance comes to life through the latest in app based augemented reality</p></li>
+                        <small>*please note, the app is only available for iOS devices at this time</small>
+                        
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Garwood" class="container content-section text-center">
+        <div class="Garwood-section">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Luke Garwood</h2>
+                <p style="text-align: left">&nbsp &nbsp Luke Garwood is a dev artist, dancer, and choreographer based in Toronto, Canada. Garwood has performed professionally with such companies as: Banff Festival Ballet, Toronto Dance Theatre, ProArteDanza, Typecast Dance Company, Hit and Run Dance Productions, Signal Theatre, and Coleman Lemieux and Company.<br>&nbsp &nbsp Independently, Garwood works in Toronto and Berlin, collaborating with choreographers such as: Valerie Calam, D.A. Hoskins, Allison Cummings, Susie Burpee, Kate Hilliard, Jacob Niedzwiecki, Tina Fushell, Yvonne Ng, Jenn Goodwin, Heidi Strauss, Christoph Winkler and, through Nuit Blanche, Gordon Monaghan and Trisha Brown Dance Company.<br>&nbsp &nbsp As a creator, and student of OCADU’s Digital Futures Program, Garwood has garnered recognition for merging dance with other mediums ----   this includes receiving the 2013 Soulpepper Multidisciplinary Dance Award. Garwood is also co-director of F Slash, an organization that creates and curates dance performances for live and online audiences. More on F Slash can be found on facebook at <a href ="https://www.facebook.com/fslash/">https://www.facebook.com/fslash/</a> 
+</p>
+            </div>
+        </div>
+        </div>
+        </div>    
+    </section>
+                <section id="contact" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p>Any feedback can be directed to Luke Garwood directly at <a href="mailto:garwoodluke@gmail.com">garwoodluke@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+               
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-right">
+            <aside><small>Copyright &copy; 2016 Luke Garwood</small></aside>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/poodgellom.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
-
-
-
-
 
 </html>

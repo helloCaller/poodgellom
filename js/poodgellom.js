@@ -113,14 +113,13 @@ function bubblePop(bubble, glow, bee, pikk) {
     $('.' + bubble).animate({
         width: "+=5",
         height: "+=5",
-        left: "-=1",
     },{
         duration: 100,
         complete: function() {
             $('.' + bubble).remove();
             setTimeout(function(){
                 $("#beaker").append(bubbleHTML);
-            },6900);
+            },3900);
             
         }
         
@@ -134,9 +133,9 @@ function bubblePop(bubble, glow, bee, pikk) {
         var pikkWidthNum = pikkWidthString.slice(0,(pikkWidthString.length - 2));
     
         $('#' + bee + ',#' + pikk).stop().animate({
-                left: 140000
+                left: 6000
             },{
-                duration: 70000,
+                duration: 40000,
                 step: function () {
                     var beePosition = $beeElement.position().left;
                     var pikkPosition = $pikkElement.position().left;
@@ -145,9 +144,7 @@ function bubblePop(bubble, glow, bee, pikk) {
                         $beeElement.stop().remove();
                             }
                       
-                   
-                    
-                    if (pikkPosition > window.innerWidth) {
+                   if (pikkPosition > window.innerWidth) {
                         $pikkElement.stop().remove();
                             }
                         },
@@ -157,4 +154,4 @@ function bubblePop(bubble, glow, bee, pikk) {
 };
 
 
-
+$("#second").css("top", window.innerHeight)

@@ -32,8 +32,12 @@ a:focus {
 }
 
 section {
-    background: #006600;
-    : overflow: hidden;
+    padding-top:3%;
+ 
+}
+
+#second{
+    position:relative;
 }
 
 .img-responsive{
@@ -132,14 +136,6 @@ section {
     }
 }
 
-@keyframes flyAway{
-    0%{
-        left: 20%;
-    }
-    100%{
-        left: 2000%;
-    }
-}
 
 
 @keyframes fly{
@@ -181,28 +177,16 @@ section {
 @keyframes pikkChase{
    0% {
         bottom: -50%;
-       -moz-transform: scale(.9) rotate(0deg);
-        -o-transform: scale(.9) rotate(0deg);
-        -webkit-transform: scale(.9) rotate(0deg);
-        transform: scale(.9) rotate(0deg);
         opacity: 1;
     }
     15% {
         bottom: -20%;
-        -moz-transform:scale(.8) rotate(-50deg);
-        -o-transform:scale(.8) rotate(-50deg);
-        -webkit-transform:scale(.8) rotate(-50deg);
-        transform:scale(.8) rotate(-50deg);
         opacity: 1;
     
     }
     
     47.5% {
         bottom: 65%;
-        -moz-transform: scale(.9) rotate(0deg) ;
-        -o-transform: scale(.9) rotate(0deg) ;
-        -webkit-transform: scale(.9) rotate(0deg) ;
-        transform: scale(.9) rotate(0deg) ;
         opacity: 1
     }
     50%{
@@ -540,8 +524,6 @@ div#beaker span.bubble4 {
     -moz-animation: bubbleUp4 7s infinite ease-in-out;
     z-index: 20000;
     
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
 }
 div#beaker span.bubble5 {
    background: #fff;
@@ -584,8 +566,7 @@ div#beaker span.bubble6 {
     -moz-animation: bubbleUp3 12s infinite ease-in-out;
     z-index: 20000;
     
-    transform: translate3d(0,0,0);
-    -webkit-transform: translate3d(0,0,0);
+    
 }
 
 #bee1 {
@@ -832,17 +813,25 @@ footer {
     }
 
 .fullPage {
-        position: fixed;
+        position: relative;
         width: 100%;
-        height: 100%;
         min-height: 100%;
-        -webkit-background-size: 100% 100%;
+        -webkit-background-size: cover;
         -moz-background-size: 100% 100%;
         background-size: 100% 100%;
         -o-background-size: 100% 100%;
         background-repeat: no-repeat background-position: center;
         background-image: url('../img/phoneback.jpg');
     }
+
+    .home{
+        position:fixed;
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        
+    }
+    
 
     
 }
