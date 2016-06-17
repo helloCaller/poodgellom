@@ -57,12 +57,12 @@ $(".navbar-toggle").click(function() {
         navbar.menuOut = "false";
         
         $wrapper.css("position", "absolute");
-        $wrapper.css("overflow", "auto");
+        $wrapper.css("overflow", "initial");
         $icon.removeClass("glyphicon-remove");
         $icon.addClass("glyphicon-align-justify");
         
     }
-    
+    console.log(navbar.menuOut);
 });
 
 var bubbles = {
@@ -84,10 +84,11 @@ $(window).scroll(
             var currentTop = $(window).scrollTop();
                 
                 if (currentTop < this.previousTop) {
-                    $(".custom-main-menu").show();
-                } else if(navbar.menuOut === "false" && currentTop >=20){
-                    $(".custom-main-menu").hide();
-                }
+                    $(".custom-main-menu").fadeIn().show();
+                } else if (navbar.menuOut === "false" && currentTop >=20){
+                    $(".custom-main-menu").fadeOut().hide();
+                } 
+            
             
             if(currentTop > window.innerHeight){
                 bubbles.visible = "false";
