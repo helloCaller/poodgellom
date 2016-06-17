@@ -21,16 +21,26 @@
         });    
     }());
 
+
+
 var navbar = {
     menuOut: "false",
     image: document.getElementById("imageNav"),
+    menuDisplayed: "false",
 };
 
 if (navbar.image !== null) {
     var currentImageWidth = navbar.image.clientWidth;
 }
 
+if (navbar.menuDisplayed === "true"){
+                $("#main-menu").css("display","visible");
+    } else {
+                $("#main-menu").css("display","none");
+            }
 
+
+//adjusts nav iconfor open and closed icons, and also fixes the screen in place when in a menu
 $(".navbar-toggle").click(function() {
     var $wrapper = $(".wrapper");
     var $icon = $("#icon");
@@ -52,9 +62,18 @@ $(".navbar-toggle").click(function() {
         $icon.addClass("glyphicon-align-justify");
         
     }
-    console.log(navbar.menuOut);
+    
 });
 
+var bubbles = {
+    visible : "true",
+};
+
+if(bubbles.visible === "true"){
+    $('#beaker').show();
+} else {
+    $('#beaker').hide();
+}
     
 //---nav appear and leave
 $(window).scroll(
@@ -63,16 +82,51 @@ $(window).scroll(
     
         function() {
             var currentTop = $(window).scrollTop();
+                
+                if (currentTop < this.previousTop) {
+                    $(".custom-main-menu").show();
+                } else if(navbar.menuOut === "false" && currentTop >=20){
+                    $(".custom-main-menu").hide();
+                }
             
-            if (currentTop < this.previousTop) {
-                $(".custom-main-menu").show();
-            } else if(navbar.menuOut === "false" && currentTop >=20){
-                $(".custom-main-menu").hide();
+            if(currentTop > window.innerHeight){
+                bubbles.visible = "false";
+            } else if (currentTop === 0){
+                bubbles.visible = "true";
             }
+            
             
             this.previousTop = currentTop;
         }
+    
     );
+
+//scroll page down on arrow click
+//$(".page-scroll").click(function(event) {
+//      // Prevent default anchor click behavior
+//      event.preventDefault();
+//
+//    
+//   $('html, body').animate({
+//       scrollTop: $('#pageTwo').offset().top,
+//   }, 1500, 'easeOutBounce', function(){
+//      $('#beaker').css("display", "none"); 
+//   } 
+//   );
+//})
+
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top,
+        }, 2500, function(){
+            
+        
+        });
+        event.preventDefault();
+    });
+});
  
 
 function bubblePop(bubble, glow, bee, pikk) {
