@@ -49,18 +49,7 @@ hr{
     }
 }
 
-a {
-    color: #42dca3;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
 
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #1d9b6c;
-}
 
 .light {
     font-weight: 400;
@@ -175,7 +164,8 @@ a:focus {
         -moz-background-size: 100% 100%;
         background-size: 100% 100%;
         -o-background-size: 100% 100%;
-        background-repeat: no-repeat background-position: center;
+        background-repeat: no-repeat; 
+        background-position: center;
         background-image: url('../img/phoneback.jpg');
 }
 
@@ -283,21 +273,14 @@ a:focus {
     }
 }
 
-.content-section {
-    padding-top: 3%;
-}
 
-.download-section {
+
+.about-section, .download-section {
     width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    height:100%;
+
 }
+    
 
 
 
@@ -307,14 +290,15 @@ a:focus {
     }
 
     .download-section {
-        padding: 100px 0;
+        padding-top: 3%;
+    }
+    #download{
+        padding-bottom: 3%;
     }
     .about-section{
-       padding-top: 20%; 
+       padding-top: 5%; 
     }
-    .Garwood-section{
-        padding-top: 5%;
-    }
+
 
 }
 

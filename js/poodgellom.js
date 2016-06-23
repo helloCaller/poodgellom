@@ -70,9 +70,9 @@ var bubbles = {
 };
 
 if(bubbles.visible === "true"){
-    $('#beaker').show();
+    $('#beaker').css("display","visible");
 } else {
-    $('#beaker').hide();
+    $('#beaker').css("display","none");
 }
     
 //---nav appear and leave
@@ -84,9 +84,9 @@ $(window).scroll(
             var currentTop = $(window).scrollTop();
                 
                 if (currentTop < this.previousTop) {
-                    $(".custom-main-menu").fadeIn().show();
+                    $(".custom-main-menu").show().fadeIn();
                 } else if (navbar.menuOut === "false" && currentTop >=20){
-                    $(".custom-main-menu").fadeOut().hide();
+                    $(".custom-main-menu").hide();
                 } 
             
             
@@ -96,8 +96,10 @@ $(window).scroll(
                 bubbles.visible = "true";
             }
             
+            setTimeout(function(){ 
+                this.previousTop = currentTop;
+            }, 500);
             
-            this.previousTop = currentTop;
         }
     
     );
@@ -209,4 +211,9 @@ function bubblePop(bubble, glow, bee, pikk) {
 };
 
 
+
+
+
+
 $("#second").css("top", window.innerHeight)
+

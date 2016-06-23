@@ -27,7 +27,8 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <div class="wrapper">
-    <!-- Navigation -->
+<!--
+     Navigation 
       <nav id="main-menu" class="navbar navbar-default navbar-center navbar-fixed-top custom-main-menu">
         <h1 class="hidden-section-heading">Main Menu</h1>
         <div class="container">
@@ -42,11 +43,11 @@
                 <div class="tint">
                 <ul class="nav navbar-nav navbar-center custom-nav">
                     <li><a href="inspired.html" title="Background story">Inspired By</a></li>
-                    <li><a href="index.html" title="Poodgellom Chronicles story">Story</a></li>
-                    <li><a href="characters.html" title="Character descriptions">Characters</a></li>
-                    <li><a href="maps.html" title="Poodgellom Chronicles maps">Maps</a></li>
-                    <li><a href="flora.html" title="Poodgellom Chronicles plant life">Flora</a></li>
-                    <li><a href="lexicon.html" title="Poodgellom Chronicles vocabulary">Lexicon</a></li>
+                    <li><a href="construction.html" title="Poodgellom Chronicles story">Story</a></li>
+                    <li><a href="construction.html" title="Character descriptions">Characters</a></li>
+                    <li><a href="construction.html" title="Poodgellom Chronicles maps">Maps</a></li>
+                    <li><a href="construction.html" title="Poodgellom Chronicles plant life">Flora</a></li>
+                    <li><a href="construction.html" title="Poodgellom Chronicles vocabulary">Lexicon</a></li>
 
                 </ul>
                 </div>
@@ -54,6 +55,7 @@
         </div>
     </div>
 </nav>
+-->
 
     <!-- Intro Header -->
     <header class="intro">
@@ -69,7 +71,7 @@
             <div class="containter-fluid">
                 <div id="jumbo" class="jumbotron">
                     <h1 class="text-center" id="discover">Discover the world of Poodgelloms</h1>
-                    <a href="#pageTwo" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
+                    <a href="#pageTwo" class="btn btn-circle page-scroll" title="nav list"><i class="fa fa-angle-double-down animated"></i></a>
                 </div>
             </div>
             
@@ -84,43 +86,67 @@
     
 
     <!-- About Section -->
-    <section id="pageTwo" class="container content-section text-center">
+    <section id="pageTwo" class="container-fluid content-section text-center">
         <div class="about-section">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <p>Inspired By</p>
-                <a href="inspired.html" title="link to inspired by story">
-                    <img class="img-responsive" src="img/peanut.jpeg">
+            <div class="col-sm-3 col-md-6">
+                <a href="inspired.html" title="where it all started">
+                    <p>Inspired By</p>
+                    <img class="img-responsive framed" src="img/vicword.jpg">
+                    </a>
+            </div>
+            <div class="col-sm-3 col-md-6">
+                <a href="construction.html" title="the world">   <p>Maps</p>
+                    <img class="img-responsive framed" src="img/map.jpg">
                 </a>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <p>Story</p>
-                <img class="img-responsive" src="img/peanut.jpeg">
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <p>Characters</p>
-                <img class="img-responsive" src="img/victor.jpg">
-            </div>
+            
         </div>
+        <a href="#pageThree" class="btn btn-circle page-scroll extra" title="keep moving down list"><i class="fa fa-angle-double-down animated"></i></a>
         </div>
     </section>
+        
+         <section id="pageThree" class="container-fluid content-section text-center">
+        <div class="about-section">
+        <div class="row">
+             <div class="col-sm-10 col-md-6">
+                         <a href="construction.html" title="Story">
+                            <p>Story</p>
+                            <img class="img-responsive framed" src="img/story.jpg">
+                        </a>
+            </div>
+            <div class="col-sm-10 col-md-6">
+                <a href="construction.html" title="the world"> <p>Characters</p>
+                    <img class="img-responsive framed" src="img/map.jpg">
+                </a>
+            </div>
+            
+        </div>
+        <a href="#pageFour" class="btn btn-circle page-scroll extra" title="keep moving down list"><i class="fa fa-angle-double-down animated"></i></a>
+        </div>
+    </section>
+        
 
     <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
+    <section id="pageFour" class="container-fluid content-section text-center">
+        <div class="about-section">
+            
                  <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img class="img-responsive" src="img/victor.jpg">
+                     <div class="col-sm-12 col-md-6">
+                        <a href="construction.html" title="Flora">
+                            <p>Flora</p>
+                            <img class="img-responsive framed" src="img/flora.jpg">
+                        </a>
                     </div>
-            <div class="col-sm-12 col-md-4">
-                <img class="img-responsive" src="img/victor.jpg">
+                    <div class="col-sm-12 col-md-6">
+                         <a href="construction.html" title="Lexicon">
+                            <p>Lexicon</p>
+                            <img class="img-responsive framed" src="img/wordcloud.jpg">
+                        </a>
+                    </div>
+                     
             </div>
-            <div class="col-sm-12 col-md-4">
-                <img class="img-responsive" src="img/victor.jpg">
-            </div>
-        </div>
-            </div>
+            <a href="header" class="btn btn-circle page-scroll" title="top of page"><i class="fa fa-angle-double-up animated"></i></a>
         </div>
     </section>
 </div>
